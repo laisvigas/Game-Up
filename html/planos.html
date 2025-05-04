@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Up</title>
+    <link rel="stylesheet" href="../assets/bootstrap/custom.css">
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../assets/bootstrap/customStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-navy sticky-top">
+        <div class="container py-3 gap-5">
+          <a class="navbar-brand fw-bold" href="../html/index.html">
+            <img src="../assets/images/logo.png" alt="Logo" height="30">
+          </a>
+      
+          <!-- Toggler button for collapse -->
+          <button class="navbar-toggler text-white bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- Collapsible content -->
+          <div class="collapse navbar-collapse justify-content-center align-items-center gap-5" id="navbarContent">
+            <ul class="navbar-nav flex-lg-row flex-column text-center">
+              <li class="nav-item"><a class="nav-link text-white" href="../html/treinos.html">TREINOS</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="../html/instrutores.html">INSTRUTORES</a></li>
+              <li class="nav-item"><a class="nav-link text-warning" href="../html/planos.html">PLANOS</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="../html/galeria.html">GALERIA</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="../html/contatos.html">CONTATOS</a></li>
+            </ul>
+      
+            <!-- Buttons -->
+            <div class="d-flex gap-2 mt-3 mt-lg-0 justify-content-center align-items-center">
+              <button class="btn btn-success">Continuar Missão</button>
+              <button class="btn btn-info text-white">Novo Jogo</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <!-- ------------ Planos main content ------------  -->
+    <main class="flex-fill bg-dark-purple text-white">
+        <div class="container py-5">
+            <h1 class="display-1 fw-bold">Escolha como vai upar</h1>
+            <p class="lead font-monospace">Na Game Up, você não entra apenas numa academia, você entra em uma campanha épica.</p>
+            <p class="lead font-monospace">Escolha seu pacote e comece a evoluir sua build.</p>
+        </div>
+
+    <!-- ------ Cards Section ------ -->
+        
+    <section class="container p-4 py-5 my-4 mx-auto w-100">
+        <div class="d-flex justify-content-between gap-4 w-100 custom-cards-wrapper">
+
+          <!-- Card 1 -->
+      
+          <div class="card d-flex flex-column bg-navy text-white rounded-lg overflow-hidden custom-card">
+            <div class="py-2 px-3 text-center fw-bold fs-sm position-absolute overflow-hidden lh-base card-header card1-header">Tutorial</div>
+            <div class="d-flex flex-column flex-grow-1 mt-5 mb-5 p-4">
+              <h3 class="display-6 fw-bold text-center mb-2">Starter</h3>
+              <div class="display-2 fw-bold text-center mb-2">
+                <span>70</span><span class="fs-6"> golds/mês</span>
+              </div>
+              <div class="font-monospace mb-4 mt-4">
+                <span>Para quem está começando a jogar no mundo real. Ideal para testar seus atributos e desbloquear os primeiros níveis</span>
+              </div>
+              <ul class="list-unstyled font-monospace p-0 mb-4">
+                <li class="d-flex align-items-center py-1 feature-item">2 treinos por semana</li>
+                <li class="d-flex align-items-center py-1 feature-item">Acesso às classes iniciais de treino</li>
+                <li class="d-flex align-items-center py-1 feature-item">1 desafio mensal</li>
+                <li class="d-flex align-items-center py-1 feature-item">Avaliação física no início da jornada</li>
+                <li class="d-flex align-items-center py-1 feature-item excluded">Participação em eventos temáticos</li>
+                <li class="d-flex align-items-center py-1 feature-item excluded">NPC Trainer</li>
+              </ul>
+              <div class="font-monospace fs-sm mb-4">
+                <p class="mb-0">Modo: Tutorial</p>
+                <p>Recompensas: XP básica, primeiros buffs</p>
+              </div>
+              <button class="py-3 px-4 fw-bold text-center text-white card-button">ADERIR</button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+      
+          <div class="card d-flex flex-column bg-navy text-white rounded-lg overflow-hidden custom-card">
+            <div class="py-2 px-3 text-center fw-bold fs-sm position-absolute overflow-hidden lh-base card-header card2-header">Campanha</div>
+            <div class="d-flex flex-column flex-grow-1 mt-5 mb-5 p-4">
+              <h3 class="display-6 fw-bold text-center mb-2">Up</h3>
+              <div class="display-2 fw-bold text-center mb-2"">
+                <span>200</span><span class="fs-6"> golds/mês</span>
+              </div>
+              <div class="font-monospace mb-4 mt-4">
+                <span>Você já passou do tutorial e quer evoluir mais rápido. Esse pack garante acesso a mais conteúdo, mais conquistas e mais loot.</span>
+              </div>
+              <ul class="list-unstyled font-monospace p-0 mb-4">
+                <li class="d-flex align-items-center py-1  feature-item">Treinos ilimitados</li>
+                <li class="d-flex align-items-center py-1  feature-item">Acesso a todas as classes</li>
+                <li class="d-flex align-items-center py-1  feature-item">3 desafios mensais</li>
+                <li class="d-flex align-items-center py-1  feature-item">Participação em eventos temáticos</li>
+                <li class="d-flex align-items-center py-1  feature-item">Consultoria física</li>
+                <li class="d-flex align-items-center py-1  feature-item">Kit digital gamer</li>
+                <li class="d-flex align-items-center py-1  feature-item excluded">NPC Trainer</li>
+              </ul>
+              <div class="font-monospace fs-sm mb-4">
+                <p class="mb-0">Modo: Campanha</p>
+                <p>Recompensas: XP+, moedas, conquistas</p>
+              </div>
+              <button class="py-3 px-4 fw-bold text-center text-white card-button">ADERIR</button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+      
+          <div class="card d-flex flex-column bg-navy text-white rounded-lg overflow-hidden custom-card">
+            <div class="py-2 px-3 text-center fw-bold fs-sm position-absolute overflow-hidden lh-base card-header card3-header">New Game +</div>
+            <div class="d-flex flex-column flex-grow-1 mt-5 mb-5 p-4">
+              <h3 class="display-6 fw-bold text-center mb-2">Supreme</h3>
+              <div class="display-2 fw-bold text-center mb-2">
+                <span>800</span><span class="fs-6"> golds/mês</span>
+              </div>
+              <div class="font-monospace mb-4 mt-4">
+                <span>Para quem joga no modo hardcore e quer acesso completo ao mundo da Game Up. Aqui, você vira lenda.</span>
+              </div>
+              <ul class="list-unstyled font-monospace p-0 mb-4">
+                <li class="d-flex align-items-center py-1 feature-item">Todos os benefícios do plano UP</li>
+                <li class="d-flex align-items-center py-1 feature-item">NPC Trainer 1x por semana</li>
+                <li class="d-flex align-items-center py-1 feature-item">Camiseta exclusiva "Lenda Game UP</li>
+                <li class="d-flex align-items-center py-1 feature-item">Loot box anual com ítens épicos</li>
+                <li class="d-flex align-items-center py-1 feature-item">Título exclusivo nos rankings</li>
+              </ul>
+              <div class="font-monospace fs-sm mb-4">
+                <p class="mb-0">Modo: New Game+</p>
+                <p>Recompensas: XP máximo, loot lendário, status épico</p>
+              </div>
+              <button class="py-3 px-4 fw-bold text-center text-white card-button">ADERIR</button>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+
+    <!-- ------ Instalações Section ------ -->
+
+    <section class="container py-5">
+      <h1 class="display-3 fw-bold">Nossas Instalações</h1>
+      <p class="lead font-monospace">A Game Up não é apenas um ginásio. É uma experiência de fitness imersiva! As nossas instalações estão equipadas com as mais recentes tecnologias de realidade aumentada e monitoramento digital de saúde.</p>
+      <p class="lead font-monospace">Oferecemos uma vasta gama de zonas especializadas, incluindo áreas dedicadas à musculação, cardio, ciclismo e treino funcional, bem como espaços únicos, como o nosso ringue de boxe e piscina. Cada área é projetada para melhorar o seu treino e fazer com que exercitar-se pareça um jogo.</p>
+      
+      <div class="row p-2 py-5">
+      
+        <!-- Icones -->
+        <div class="col-md-2 bg-white border rounded instalacoes"> 
+          <div class="py-5">
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <div class="icon-container">
+                  <div class="icon-wrapper">
+                    <img src="..\assets\images\body_building_zone_icon.png" alt="Icone de Body Building Zone" class="icon-image">
+                    <img src="..\assets\images\cardio_zone_icon.png" alt="Icone de Cardio Zone" class="icon-image">
+                  </div>
+                 
+                  <div class="icon-wrapper">
+                    <img src="..\assets\images\estudio_cycling_icon.png" alt="Icone de Estudio Cycling" class="icon-image">
+                    <img src="..\assets\images\estrutura_treino_funcional_icon.png" alt="Icone de Estrutura Treino Funcional" class="icon-image">
+                  </div>
+                 
+                  <div class="icon-wrapper">
+                    <img src="..\assets\images\ringue_boxe_icon.png" alt="Icone de Ringue Boxe" class="icon-image">
+                    <img src="..\assets\images\piscina_icon.png" alt="Icone de Piscina" class="icon-image">
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Imagem-->
+
+        <div class="col-md-10"> 
+          <img src="..\assets\images\game_up_instalacoesFuturistas_image.jpg" alt="Game Up gym instalaçoes" class="img-fluid rounded w-100">
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <!-- ------ Nossas Unidades Section  ------ -->
+
+
+    <section class="container py-5">
+      <h2 class="display-3 fw-bold mb-5">Nossas Unidades</h2>
+      <p class="lead font-monospace">A Game Up tem atualmente duas localizações convenientes para o servir. A nossa unidade do Porto está localizada na Rua de Santa Catarina, 123, enquanto a nossa unidade de Lisboa pode ser encontrada na Avenida da Liberdade, 456.</p>
+      <p class="lead font-monospace">Ambas as localizações oferecem a experiência completa da Game Up, com as nossas instalações de última geração e uma equipa especializada.</p>
+      
+      <div class="row g-5 py-5">
+        <div class="col-lg-6">
+          <div class="card shadow-lg border rounded custom-card-unidades">
+            <div class="card-body p-4">
+              <h3 class="card-title mb-4">Game Up - Porto</h3>
+              <figure class="bg-light border rounded mb-4" style="height: 300px;" id="mapContainer">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24251.770187857556!2d-8.610237782161737!3d41.15794538189667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24653e4b0b1839%3A0xa6f99a1cf1691f6e!2sPorto%2C%20Portugal!5e0!3m2!1sen!2sus!4v1700851528789!5m2!1sen!2sus"
+                  width="100%"
+                  height="300"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </figure>
+              <address class="font-monospace mb-0">
+                <strong>Endereço:</strong> Rua de Santa Catarina, 123<br>
+                4000-442 Porto, Portugal<br>
+                <strong>Telefone:</strong> +351 22 123 4567<br>
+                <strong>Email:</strong> porto@gameup.pt
+              </address>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card shadow-lg border rounded custom-card-unidades">
+            <div class="card-body p-4">
+              <h3 class="card-title mb-4">Game Up - Lisboa</h3>
+              <figure class="bg-light border rounded mb-4" style="height: 300px;" id="mapContainer">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.742424158235!2d-9.139339999999986!3d38.71104600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd193311560c1115%3A0xcd1b74d994c799fa!2sLisbon%2C%20Portugal!5e0!3m2!1sen!2sus!4v1700851703668!5m2!1sen!2sus"
+                  width="100%"
+                  height="300"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </figure>
+              <address class="font-monospace mb-0">
+                <strong>Endereço:</strong> Avenida da Liberdade, 456<br>
+                1250-146 Lisboa, Portugal<br>
+                <strong>Telefone:</strong> +351 21 987 6543<br>
+                <strong>Email:</strong> lisboa@gameup.pt
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- FOOTER -->
+    <footer class="text-center py-4 bg-indigo">
+        <div class="mb-2">
+            <!-- ig -->
+            <a href="https://www.instagram.com/" target="_blank" class="mx-2 text-green"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg></a>     
+            
+            <!-- yt -->
+            <a href="https://www.youtube.com/" target="_blank" class="mx-2 text-green"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+              </svg></a>
+            <!-- x -->
+            <a href="https://x.com/" target="_blank" class="mx-2 text-green"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+              </svg></a>
+        </div>
+        <small class="text-white">Game Up, Todos os direitos reservados</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

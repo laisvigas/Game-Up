@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Step Up Your Game</title>
+  <style>
+    :root {
+      --purple: #6A5ACD;
+      --yellow: #FFD700;
+      --blue: #1E90FF;
+      --white: #F8F9FA;
+      --gray: #6C757D;
+      --dark-bg: #262626;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--dark-bg);
+      color: var(--white);
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(to right, var(--purple), var(--blue));
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: var(--yellow);
+      text-shadow: 2px 2px var(--gray);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--white);
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      background-color: var(--yellow);
+      color: var(--dark-bg);
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: var(--blue);
+      color: var(--white);
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <h1>Step Up Your Game!</h1>
+    <p>Join our gamified fitness revolution — earn rewards, level up, and crush challenges.</p>
+    <button class="btn">Join Now</button>
+  </section>
+</body>
+</html>
