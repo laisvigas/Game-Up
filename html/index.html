@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg bg-navy sticky-top">
         <div class="container py-3 gap-5">
             <a class="navbar-brand fw-bold" href="../html/index.html">
-                <img src="../assets/images/logo.png" alt="Logo" height="30">
+                <img src="../assets/images/logo.png" alt="Logo" height="30" class="zoom-effect">
             </a>
 
             <!-- Toggler button for collapse -->
@@ -29,21 +29,21 @@
             <!-- Collapsible content -->
             <div class="collapse navbar-collapse justify-content-center align-items-center gap-5" id="navbarContent">
                 <ul class="navbar-nav flex-lg-row flex-column text-center">
-                    <li class="nav-item"><a class="nav-link text-white" href="../html/treinos.html">TREINOS</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="../html/instrutores.html">INSTRUTORES</a>
+                    <li class="nav-item zoom-effect"><a class="nav-link text-white" href="../html/treinos.html">TREINOS</a></li>
+                    <li class="nav-item zoom-effect"><a class="nav-link text-white" href="../html/instrutores.html">INSTRUTORES</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link text-white" href="../html/planos.html">PLANOS</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="../html/galeria.html">GALERIA</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="../html/contatos.html">CONTATOS</a></li>
+                    <li class="nav-item zoom-effect"><a class="nav-link text-white" href="../html/planos.html">PLANOS</a></li>
+                    <li class="nav-item zoom-effect"><a class="nav-link text-white" href="../html/galeria.html">GALERIA</a></li>
+                    <li class="nav-item zoom-effect"><a class="nav-link text-white" href="../html/contatos.html">CONTATOS</a></li>
                 </ul>
 
                 <!-- Buttons -->
-                <div class="d-flex gap-2 mt-3 mt-lg-0 justify-content-center align-items-center">
-                    <button class="btn btn-success">Continuar Missão</button>
-                    <button class="btn btn-info text-white">Novo Jogo</button>
-                </div>
+            <div class="d-flex gap-2 mt-3 mt-lg-0 justify-content-center align-items-center">
+                <button class="btn btn-success"> <a href="../html/signin.html" class="text-white nav-link">Continuar Missão</a></button>
+                <button class="btn btn-info text-white"><a href="../html/signup.html" class="text-white nav-link">Novo Jogo</a></button>
+              </div>
             </div>
-        </div>
+          </div>
     </nav>
 
     <!-- Hero Section -->
@@ -99,24 +99,24 @@
     </section>
 
     <!-- Classes -->
-    <section class="container-fluid p-5 text-center bg-navy">
+    <section class="container-fluid p-5 text-center bg-navy ">
         <h4 class="fw-bold text-uppercase py-3">Aqui você pode escolher a sua classe</h4>
         <div class="row g-4">
             <div class="col-12 col-md-3">
-                <div class="border p-3 rounded">
+                <div class="border p-3 rounded zoom-effect">
                     <img src="../assets/images/tank.jpeg" class="img-fluid mb-2" alt="Tank">
                     <h5 class="fw-bold">TANK</h5>
                     <p class="small font-monospace">Força e musculação</p>
                 </div>
             </div>
             <div class="col-12 col-md-3">
-                <div class="border p-3 rounded">
+                <div class="border p-3 rounded zoom-effect">
                     <img src="../assets/images/rogue.jpeg" class="img-fluid mb-2" alt="Rogue">
                     <h5 class="fw-bold">ROGUE</h5>
                     <p class="small font-monospace">Treinos funcionais e de agilidade</p>
                 </div>
             </div>
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-3 zoom-effect">
                 <div class="border p-3 rounded">
                     <img src="../assets/images/mago.jpeg" class="img-fluid mb-2" alt="Mago">
                     <h5 class="fw-bold">MAGO</h5>
@@ -124,7 +124,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-3">
-                <div class="border p-3 rounded">
+                <div class="border p-3 rounded zoom-effect">
                     <img src="../assets/images/hiit.jpeg" class="img-fluid mb-2" alt="Sobrevivente">
                     <h5 class="fw-bold">SOBREVIVENTE</h5>
                     <p class="small font-monospace">HIIT e resistência</p>
@@ -397,6 +397,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
+
+        <script src="../javascript/script.js"></script>
+
+
 </body>
 
 </html>
