@@ -67,7 +67,7 @@
   </header>
 
   <!-- MAIN: Planos -->
-  <main class="flex-fill bg-dark-purple text-white">
+  <main class="flex-fill bg-dark-purple text-white py-5">
 
     <!-- ------ Cards Section ------ -->
 
@@ -116,7 +116,10 @@
                 <p class="mb-0">Modo: Tutorial</p>
                 <p>Recompensas: XP básica, primeiros buffs</p>
               </div>
-              <button class="btn border bg-warning py-3 px-4 fw-bold text-center mt-auto">ADERIR</button>
+              <button type="button" 
+              class="btn border bg-warning py-3 px-4 fw-bold text-center mt-auto" 
+              data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              ADERIR</button>
             </div>
           </div>
         </div>
@@ -131,7 +134,7 @@
             <div class="d-flex flex-column flex-grow-1 mt-5 mb-4 p-4">
               <h3 class="display-6 fw-bold text-center mb-2">Up</h3>
               <div class="display-2 fw-bold text-center mb-2">
-                <span>200</span><span class="fs-6"> golds/mês</span>
+                <span>200</span><span class="fs-6"> golds/tri</span>
               </div>
               <div class="font-monospace mb-4 mt-4">
                 <span>Você já passou do tutorial e quer evoluir mais rápido. Esse pack garante acesso a mais conteúdo,
@@ -173,7 +176,10 @@
                 <p class="mb-0">Modo: Campanha</p>
                 <p>Recompensas: XP+, moedas, conquistas</p>
               </div>
-              <button class="btn border bg-warning py-3 px-4 fw-bold text-center mt-auto">ADERIR</button>
+              <button type="button" 
+              class="btn border bg-warning py-3 px-4 fw-bold text-center mt-auto" 
+              data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              ADERIR</button>
             </div>
           </div>
         </div>
@@ -188,7 +194,7 @@
             <div class="d-flex flex-column flex-grow-1 mt-5 mb-4 p-4">
               <h3 class="display-6 fw-bold text-center mb-2">Supreme</h3>
               <div class="display-2 fw-bold text-center mb-2">
-                <span>800</span><span class="fs-6"> golds/mês</span>
+                <span>800</span><span class="fs-6"> golds/ano</span>
               </div>
               <div class="font-monospace mb-4 mt-4">
                 <span>Para quem joga no modo hardcore e quer acesso completo ao mundo da Game Up. Aqui, você vira
@@ -225,7 +231,10 @@
                 <p class="mb-0">Modo: New Game+</p>
                 <p>Recompensas: XP máximo, loot lendário, status épico</p>
               </div>
-              <button class="btn border bg-warning py-3 px-4 fw-bold text-center mt-auto">ADERIR</button>
+              <button type="button" 
+              class="btn border bg-warning py-3 px-4 fw-bold text-center mt-auto" 
+              data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              ADERIR</button>
             </div>
           </div>
         </div>
@@ -233,6 +242,34 @@
       </div>
     </section>
   </main>
+
+  <!-- Chamada para ação -->
+    <section class="text-center bg-light py-5 bg-dark text-white">
+        <h2 class="fw-bold text-uppercase">SEGUE ESSA DICA</h2>
+        <p class="font-monospace">Você também pode criar uma Classe personalizada. <br>
+            Combine builds, evolua sua ficha e descubra novas habilidades com a Game Up!</p>
+        <button class="btn btn-info text-white mt-3 px-4 py-2"><a href="../html/signup.html" target="_blank" class="text-white nav-link">Novo Jogo</a></button>
+    </section>
+
+    <!-- Modal "Disponível em breve"-->
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-navy text-white border-navy">
+          <div class="modal-header bg-warning border-warning text-black my-2">
+            <h5 class="modal-title" id="staticBackdropLabel">Disponível em breve!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body pt-5">
+            Os nossos duendes programadores estão a dar o seu melhor. Por favor, aguarde só mais um pouco! 
+          </div>
+          <div class="modal-footer border-navy">
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
   <!-- FOOTER -->

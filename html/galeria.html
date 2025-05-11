@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Up - Galeria</title>
-    <link rel="stylesheet" href="../assets/bootstrap/custom.css">
     <link rel="stylesheet" href="../assets/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../assets/bootstrap/custom.css">
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 
@@ -141,15 +141,14 @@
             </div>
         </section>
 
-        <!-- Modal -->
+        <!-- Modal imagens da galeria -->
 
         <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
+                <div class="modal-content bg-navy">
+                    <div class="modal-header border-navy">
                         <h5 class="modal-title text-white" id="imageModalLabel">Imagem</h5>
-                        <button type="button" class="btn-close" onclick="location.reload();"
-                            aria-label="Close"></button>
+                        <button type="button" class="btn-close" onclick="location.reload();" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <img src="" class="img-fluid" id="modalImage" alt="Enlarged Image">
@@ -289,7 +288,7 @@
                     </div>
 
                     <div class="col-auto">
-                        <a href="#" class="btn btn-info text-white px-4 py-2">Start</a>
+                        <a href="#" class="btn btn-info text-white px-4 py-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Start</a>
                     </div>
                 </form>
             </div>
@@ -321,6 +320,26 @@
             </div>
         </section>
     </aside>
+
+    <!-- Modal "Disponível em breve"-->
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-navy text-white border-navy">
+          <div class="modal-header bg-warning border-warning text-black my-2">
+            <h5 class="modal-title" id="staticBackdropLabel">Disponível em breve!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body pt-5">
+            Os nossos duendes programadores estão a dar o seu melhor. Por favor, aguarde só mais um pouco! 
+          </div>
+          <div class="modal-footer border-navy">
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- FOOTER -->
     <footer class="text-center py-4 bg-indigo">

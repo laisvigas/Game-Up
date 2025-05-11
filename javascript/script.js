@@ -1,5 +1,4 @@
-
-// Efeito zoom nas bios dos instrutores
+// Efeito zoom
 
 document.addEventListener('DOMContentLoaded', function() {
     const zoomEffect = document.querySelectorAll('.zoom-effect');
@@ -26,10 +25,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const galleryItems = document.querySelectorAll('.image-gallery-item');
     const imageModalElement = document.getElementById('imageModal');
     const modalImage = document.getElementById('modalImage');
-    let imageModalInstance; // To store the Bootstrap Modal instance
+    let imageModalInstance; 
 
     imageModalElement.addEventListener('show.bs.modal', function(event) {
-        const clickedGalleryItem = event.relatedTarget; // The element that triggered the modal
+        const clickedGalleryItem = event.relatedTarget; 
         const imageSrc = clickedGalleryItem.getAttribute('data-image-src');
         modalImage.setAttribute('src', imageSrc);
     });
@@ -44,6 +43,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
 
 

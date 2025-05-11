@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Up - Continuar Missão</title>
-    <link rel="stylesheet" href="../assets/bootstrap/custom.css">
     <link rel="stylesheet" href="../assets/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../assets/bootstrap/custom.css">
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 
@@ -85,6 +85,26 @@
         </section>
     </main>
 
+    <!-- Modal "Disponível em breve"-->
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-navy text-white border-navy">
+          <div class="modal-header bg-warning border-warning text-black my-2">
+            <h5 class="modal-title" id="staticBackdropLabel">Disponível em breve!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body pt-5">
+            Os nossos duendes programadores estão a dar o seu melhor. Por favor, aguarde só mais um pouco! 
+          </div>
+          <div class="modal-footer border-navy">
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- FOOTER -->
     <footer class="text-center py-4 bg-indigo">
         <div class="mb-2">
@@ -116,6 +136,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
         </script>
+    <script src="../javascript/script.js"></script>
 </body>
 
 </html>
