@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Up - Instrutores</title>
-    <link rel="stylesheet" href="../assets/bootstrap/custom.css">
     <link rel="stylesheet" href="../assets/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="../assets/bootstrap/customStyle.css">
+    <link rel="stylesheet" href="../assets/bootstrap/custom.css">
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 
@@ -74,89 +73,195 @@
 
     <!-- MAIN: Section Perfis Instrutores -->
     <main>
-        <section class="bg-dark-purple text-white  pb-5">
+        <section class="container-fluid p-5 bg-navy text-white">
 
-            <div class="container-fluid p-5 bg-navy">
+        
+            <div class="row g-6">
 
-                <div class="row g-6">
-
-                    <!-- Instrutor 1 -->
-                    <div class="col-12 col-md-4 py-5 zoom-effect">
-                        <div class="border p-3 rounded">
-                            <img src="../assets/images/instrutor_Bruno.jpg" class="img-fluid mb-2"
-                                alt="instrutor Bruno">
+                    <!-- Instrutor 1 - Bruno -->
+                    
+                    <div class="col-12 col-md-4 py-5 zoom-effect"
+                        data-bs-toggle="modal"
+                        data-bs-target="#bioBruno"
+                        data-instrutor-nome="Coach Bruno"
+                        data-instrutor-imagem="../assets/images/instrutor_Bruno.jpg" 
+                        data-instrutor-bio="Coach Bruno é especialista em força e musculação, com anos de experiência em ajudar pessoas a atingirem seus objetivos de 'Tank'. Sua abordagem motivacional e focada em resultados o torna um dos instrutores mais procurados da Game Up. Ele acredita que todos têm um 'Tank' interior esperando para ser libertado!">
+                        <div class="border p-3 rounded" style="cursor: pointer;">
+                            <img src="../assets/images/instrutor_Bruno.jpg" class="img-fluid mb-2" alt="instrutor Bruno">
                             <h5 class="fs-2 fw-bold py-2">Coach Bruno</h5>
                             <p class="font-monospace fs-4 py-2">"Pronto para levantar o mundo hoje?"</p>
-                            <p class="font-monospace fs-6 bg-green py-1 px-2 border rounded overflow-hidden">Classe:
-                                Tank</p>
+                            <p class="font-monospace fs-6 bg-green py-1 px-2 border rounded overflow-hidden">Classe: Tank</p>
                         </div>
                     </div>
 
-                    <!-- Instrutor 2 -->
-                    <div class="col-12 col-md-4 py-5 zoom-effect">
-                        <div class="border p-3 rounded">
-                            <img src="../assets/images/instrutora_Luana.jpg" class="img-fluid mb-2"
-                                alt="instrutora Luana">
+                    <div class="modal fade" id="bioBruno" tabindex="-1" aria-labelledby="bioBrunoLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content bg-navy text-white">
+                                <div class="modal-header bg-green text-white border-green">
+                                    <h5 class="modal-title" id="bioBrunoLabel">Coach Bruno</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex align-items-center gap-3">
+                                    <img src="../assets/images/instrutor_Bruno.jpg" alt="Foto de perfil de Bruno" class="img-thumbnail rounded-circle" style="max-width: 150px;">
+                                    <p class="font-monospace fs-6">Coach Bruno é especialista em força e musculação, com anos de experiência em ajudar pessoas a atingirem seus objetivos de 'Tank'. Sua abordagem motivacional e focada em resultados o torna um dos instrutores mais procurados da Game Up. Ele acredita que todos têm um 'Tank' interior esperando para ser libertado!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Instrutor 2 - Luana -->
+                    <div class="col-12 col-md-4 py-5 zoom-effect"
+                        data-bs-toggle="modal"
+                        data-bs-target="#bioLuana"
+                        data-instrutor-nome="Mestre Luana"
+                        data-instrutor-imagem="../assets/images/instrutor_Luana.jpg" 
+                        data-instrutor-bio="Mestre Luana é a personificação da calma e do equilíbrio na Game Up. Especialista em Yoga e técnicas de flexibilidade, ela guia seus alunos em uma jornada de autoconhecimento através do movimento e da respiração. Sua abordagem holística visa fortalecer o corpo e a mente, desbloqueando o potencial mágico interior de cada um.">
+                        <div class="border p-3 rounded" style="cursor: pointer;">
+                            <img src="../assets/images/instrutora_Luana.jpg" class="img-fluid mb-2" alt="instrutora Luana">
                             <h5 class="fs-2 fw-bold py-2">Mestre Luana</h5>
                             <p class="font-monospace fs-4 py-2">"A respiração é sua primeira magia."</p>
-                            <p class="font-monospace fs-6 bg-indigo py-1 px-2 border rounded overflow-hidden">Classe:
-                                Mago</p>
+                            <p class="font-monospace fs-6 bg-indigo py-1 px-2 border rounded overflow-hidden">Classe: Mago</p>
                         </div>
                     </div>
 
-                    <!-- Instrutor 3 -->
-                    <div class="col-12 col-md-4 py-5 zoom-effect">
-                        <div class="border p-3 rounded">
+                    <div class="modal fade" id="bioLuana" tabindex="-1" aria-labelledby="bioLuanaLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content bg-navy text-white">
+                                <div class="modal-header bg-indigo text-white border-indigo">
+                                    <h5 class="modal-title" id="bioLuanaLabel">Mestre Luana</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex align-items-center gap-3">
+                                    <img src="../assets/images/instrutora_Luana.jpg" alt="Foto de perfil de Luana" class="img-thumbnail rounded-circle" style="max-width: 150px;">
+                                    <p class="font-monospace fs-6">Mestre Luana é a personificação da calma e do equilíbrio na Game Up. Especialista em Yoga e técnicas de flexibilidade, ela guia seus alunos em uma jornada de autoconhecimento através do movimento e da respiração. Sua abordagem holística visa fortalecer o corpo e a mente, desbloqueando o potencial mágico interior de cada um.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Instrutor 3 - Kaio -->
+                    <div class="col-12 col-md-4 py-5 zoom-effect"
+                        data-bs-toggle="modal"
+                        data-bs-target="#bioKaio"
+                        data-instrutor-nome="Treinador Kaio"
+                        data-instrutor-imagem="../assets/images/instrutor_Kaio.jpg" 
+                        data-instrutor-bio="Treinador Kaio traz a perícia e a precisão dos 'Rogues' para a Game Up. Com foco em treinos funcionais e de agilidade, ele desafia seus alunos a superarem seus limites com movimentos rápidos e estratégicos. Sua paixão por otimizar o desempenho garante que cada treino seja uma oportunidade para ganhar aquela 'frame de vantagem' na vida.">
+                        <div class="border p-3 rounded" style="cursor: pointer;">
                             <img src="../assets/images/instrutor_Kaio.jpg" class="img-fluid mb-2" alt="instrutor Kaio">
                             <h5 class="fs-2 fw-bold py-2">Treinador Kaio</h5>
-                            <p class="font-monospace fs-4 py-2">"Agilidade e foco. Tu só precisa de um frame de
-                                vantagem."</p>
-                            <p class="font-monospace fs-6 bg-blue py-1 px-2 border rounded overflow-hidden">Classe:
-                                Rogue</p>
+                            <p class="font-monospace fs-4 py-2">"Agilidade e foco. Tu só precisa de um frame de vantagem."</p>
+                            <p class="font-monospace fs-6 bg-blue py-1 px-2 border rounded overflow-hidden">Classe: Rogue</p>
                         </div>
                     </div>
 
-                </div>
+                    <div class="modal fade" id="bioKaio" tabindex="-1" aria-labelledby="bioKaioLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content bg-navy text-white">
+                                <div class="modal-header bg-blue text-white border-blue">
+                                    <h5 class="modal-title" id="bioKaioLabel">Treinador Kaio</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex align-items-center gap-3">
+                                    <img src="../assets/images/instrutor_Kaio.jpg" alt="Foto de perfil de Kaio" class="img-thumbnail rounded-circle" style="max-width: 150px;">
+                                    <p class="font-monospace fs-6">Treinador Kaio traz a perícia e a precisão dos 'Rogues' para a Game Up. Com foco em treinos funcionais e de agilidade, ele desafia seus alunos a superarem seus limites com movimentos rápidos e estratégicos. Sua paixão por otimizar o desempenho garante que cada treino seja uma oportunidade para ganhar aquela 'frame de vantagem' na vida.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="row g-6">
+            </div>
 
-                    <!-- Instrutor 7 -->
-                    <div class="col-12 col-md-4 py-5 zoom-effect">
-                        <div class="border p-3 rounded">
+            <div class="row g-6">
+
+                    <!-- Instrutor 4 - Raul -->
+                    <div class="col-12 col-md-4 py-5 zoom-effect"
+                        data-bs-toggle="modal"
+                        data-bs-target="#bioRaul"
+                        data-instrutor-nome="Instrutor Raul"
+                        data-instrutor-imagem="../assets/images/instrutor_Raul.jpg" 
+                        data-instrutor-bio="Instrutor Raul é o mestre da resiliência na Game Up. Especializado em treinos de alta intensidade e resistência ('Sobrevivente'), ele inspira seus alunos a nunca desistirem, mesmo quando a missão parece impossível. Sua motivação incansável e sua crença no potencial humano fazem dele um guia essencial para quem busca superar seus limites.">
+                        <div class="border p-3 rounded" style="cursor: pointer;">
                             <img src="../assets/images/instrutor_Raul.jpg" class="img-fluid mb-2" alt="instrutor Raul">
                             <h5 class="fs-2 fw-bold py-2">Instrutor Raul</h5>
                             <p class="font-monospace fs-4 pt-2">"Se você ainda está respirando, a missão continua!"</p>
-                            <p class="font-monospace fs-6 bg-warning py-1 px-2 border rounded overflow-hidden">Classe:
-                                Sobrevivente</p>
+                            <p class="font-monospace fs-6 bg-warning py-1 px-2 border rounded overflow-hidden">Classe: Sobrevivente</p>
                         </div>
                     </div>
 
-                    <!-- Instrutor 8 -->
-                    <div class="col-12 col-md-4 py-5 zoom-effect">
-                        <div class="border p-3 rounded">
-                            <img src="../assets/images/instrutora_Mila.jpg" class="img-fluid mb-2"
-                                alt="instrutora Mila">
+                    <div class="modal fade" id="bioRaul" tabindex="-1" aria-labelledby="bioRaulLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content bg-navy text-white">
+                                <div class="modal-header bg-warning text-white border-warning">
+                                    <h5 class="modal-title" id="bioRaulLabel">Instrutor Raul</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex align-items-center gap-3">
+                                    <img src="../assets/images/instrutor_Raul.jpg" alt="Foto de perfil de Raul" class="img-thumbnail rounded-circle" style="max-width: 150px;">
+                                    <p class="font-monospace fs-6">Instrutor Raul é o mestre da resiliência na Game Up. Especializado em treinos de alta intensidade e resistência ('Sobrevivente'), ele inspira seus alunos a nunca desistirem, mesmo quando a missão parece impossível. Sua motivação incansável e sua crença no potencial humano fazem dele um guia essencial para quem busca superar seus limites.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Instrutor 5 - Mila -->
+                    <div class="col-12 col-md-4 py-5 zoom-effect"
+                        data-bs-toggle="modal"
+                        data-bs-target="#bioMila"
+                        data-instrutor-nome="Sensei Mila"
+                        data-instrutor-imagem="../assets/images/instrutor_Mila.jpg" 
+                        data-instrutor-bio="Sensei Mila é a guia dos 'Mini-Heróis' na Game Up. Com uma paixão por inspirar os mais jovens, ela desenvolve treinos divertidos e educativos que cultivam a força, a coordenação e a autoconfiança desde cedo. Sua abordagem lúdica e encorajadora transforma cada sessão em uma aventura para despertar o herói interior.">
+                        <div class="border p-3 rounded" style="cursor: pointer;">
+                            <img src="../assets/images/instrutora_Mila.jpg" class="img-fluid mb-2" alt="instrutora Mila">
                             <h5 class="fs-2 fw-bold py-2">Sensei Mila</h5>
-                            <p class="font-monospace fs-4 pt-2">"Todo herói começa pequeno... mas com grandes sonhos!"
-                            </p>
-                            <p class="font-monospace fs-6 bg-info py-1 px-2 border rounded overflow-hidden">Classe:
-                                Mini-herói</p>
+                            <p class="font-monospace fs-4 pt-2">"Todo herói começa pequeno... mas com grandes sonhos!"</p>
+                            <p class="font-monospace fs-6 bg-info py-1 px-2 border rounded overflow-hidden">Classe: Mini-herói</p>
                         </div>
                     </div>
 
-                    <!-- Instrutor 9 -->
-                    <div class="col-12 col-md-4 py-5 zoom-effect">
-                        <div class="border p-3 rounded">
+                    <div class="modal fade" id="bioMila" tabindex="-1" aria-labelledby="bioMilaLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content bg-navy text-white">
+                                <div class="modal-header bg-info text-white border-info">
+                                    <h5 class="modal-title" id="bioMilaLabel">Sensei Mila</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex align-items-center gap-3">
+                                    <img src="../assets/images/instrutora_Mila.jpg" alt="Foto de perfil de Mila" class="img-thumbnail rounded-circle" style="max-width: 150px;">
+                                    <p class="font-monospace fs-6">Sensei Mila é a guia dos 'Mini-Heróis' na Game Up. Com uma paixão por inspirar os mais jovens, ela desenvolve treinos divertidos e educativos que cultivam a força, a coordenação e a autoconfiança desde cedo. Sua abordagem lúdica e encorajadora transforma cada sessão em uma aventura para despertar o herói interior.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Instrutor 6 - Léo -->
+                    <div class="col-12 col-md-4 py-5 zoom-effect"
+                        data-bs-toggle="modal"
+                        data-bs-target="#bioLeo"
+                        data-instrutor-nome="Léo, o faz tudo"
+                        data-instrutor-imagem="../assets/images/instrutor_Leo.jpg" 
+                        data-instrutor-bio="Léo, o faz tudo, é o curinga da Game Up. Transitando por diversas modalidades com maestria, ele adapta seus treinos às necessidades e objetivos de cada 'player'. Sua versatilidade e conhecimento abrangente o tornam um recurso valioso para quem busca uma abordagem personalizada e eficaz para alcançar seus melhores resultados.">
+                        <div class="border p-3 rounded" style="cursor: pointer;">
                             <img src="../assets/images/instrutor_Leo.jpg" class="img-fluid mb-2" alt="Sobrevivente">
                             <h5 class="fs-2 fw-bold py-2">Léo, o faz tudo</h5>
                             <p class="font-monospace fs-4 pt-2">"Qual é a sua build de hoje, player?"</p>
-                            <p class="font-monospace fs-6 bg-purple py-1 px-2 border rounded overflow-hidden">Classe:
-                                Error</p>
+                            <p class="font-monospace fs-6 bg-purple py-1 px-2 border rounded overflow-hidden">Classe: Error</p>
                         </div>
                     </div>
 
-                </div>
-
+                    <div class="modal fade" id="bioLeo" tabindex="-1" aria-labelledby="bioLeoLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content bg-navy text-white">
+                                <div class="modal-header bg-purple text-white border-purple">
+                                    <h5 class="modal-title" id="bioLeoLabel">Léo, o faz tudo</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex align-items-center gap-3">
+                                    <img src="../assets/images/instrutor_Leo.jpg" alt="Foto de perfil de Léo" class="img-thumbnail rounded-circle" style="max-width: 150px;">
+                                    <p class="font-monospace fs-6">Léo, o faz tudo, é o curinga da Game Up. Transitando por diversas modalidades com maestria, ele adapta seus treinos às necessidades e objetivos de cada 'player'. Sua versatilidade e conhecimento abrangente o tornam um recurso valioso para quem busca uma abordagem personalizada e eficaz para alcançar seus melhores resultados.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
 
         </section>
