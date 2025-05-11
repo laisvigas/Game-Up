@@ -10,60 +10,71 @@
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 
-<body class="d-flex flex-column min-vh-100">
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-navy sticky-top">
-        <div class="container py-3 gap-5">
-            <a class="navbar-brand fw-bold" href="../html/index.html">
-                <img src="../assets/images/logo.png" alt="Logo" height="30" class="zoom-effect">
-            </a>
+<body>
+    <!-- HEADER: nav, title and subtitle -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-navy sticky-top">
+            <div class="container py-3 gap-5">
+                <a class="navbar-brand fw-bold" href="../html/index.html">
+                    <img src="../assets/images/logo.png" alt="Logo" height="30" class="zoom-effect">
+                </a>
 
-            <!-- Toggler button for collapse -->
-            <button class="navbar-toggler text-white bg-success" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <!-- Toggler button for collapse -->
+                <button class="navbar-toggler text-white bg-success" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <!-- Collapsible content -->
-            <div class="collapse navbar-collapse justify-content-center align-items-center gap-5" id="navbarContent">
-                <ul class="navbar-nav flex-lg-row flex-column text-center">
-                    <li class="nav-item zoom-effect"><a class="nav-link text-white" href="../html/treinos.html">TREINOS</a></li>
-                    <li class="nav-item zoom-effect"><a class="nav-link text-white" href="../html/instrutores.html">INSTRUTORES</a>
-                    </li>
-                    <li class="nav-item zoom-effect"><a class="nav-link text-white" href="../html/planos.html">PLANOS</a></li>
-                    <li class="nav-item zoom-effect"><a class="nav-link text-warning" href="../html/galeria.html">GALERIA</a></li>
-                    <li class="nav-item zoom-effect"><a class="nav-link text-white" href="../html/contatos.html">CONTATOS</a></li>
-                </ul>
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse justify-content-center align-items-center gap-5"
+                    id="navbarContent">
+                    <ul class="navbar-nav flex-lg-row flex-column text-center">
+                        <li class="nav-item zoom-effect">
+                            <a class="nav-link text-white" href="../html/treinos.html">TREINOS</a>
+                        </li>
+                        <li class="nav-item zoom-effect">
+                            <a class="nav-link text-white" href="../html/instrutores.html">INSTRUTORES</a>
+                        </li>
+                        <li class="nav-item zoom-effect">
+                            <a class="nav-link text-white" href="../html/planos.html">PLANOS</a>
+                        </li>
+                        <li class="nav-item zoom-effect">
+                            <a class="nav-link text-warning" href="../html/galeria.html">GALERIA</a>
+                        </li>
+                        <li class="nav-item zoom-effect">
+                            <a class="nav-link text-white" href="../html/contatos.html">CONTATOS</a>
+                        </li>
+                    </ul>
 
-               <!-- Buttons -->
-            <div class="d-flex gap-2 mt-3 mt-lg-0 justify-content-center align-items-center">
-                <button class="btn btn-success"> <a href="../html/signin.html" class="text-white nav-link">Continuar Missão</a></button>
-                <button class="btn btn-info text-white"><a href="../html/signup.html" class="text-white nav-link">Novo Jogo</a></button>
-              </div>
+                    <!-- Buttons -->
+                    <div class="d-flex gap-2 mt-3 mt-lg-0 justify-content-center align-items-center">
+                        <a href="../html/signin.html" class="btn btn-success text-white">Continuar Missão</a>
+                        <a href="../html/signup.html" class="btn btn-info text-white">Novo Jogo</a>
+                    </div>
+                </div>
             </div>
-          </div>
-    </nav>
+        </nav>
+    
+        <section class="position-relative text-white text-center">
+            <div class="container-fluid d-flex flex-column justify-content-center align-items-center bg-indigo">
+                <h1 class="display-1 fw-bold">galeria GAME UP</h1>
+                <p class="lead font-monospace col-8">Veja nossas instalações, eventos e fique por dentro de tudo!</p>
+                </p>
+            </div>
+        </section>
+    </header>
 
-    <!-- Sessão 1 - Início -->
-    <section class="position-relative text-white text-center">
-      <div class="container-fluid d-flex flex-column justify-content-center align-items-center bg-indigo">
-        <h1 class="display-1 fw-bold">galeria GAME UP</h1>
-        <p class="lead font-monospace col-8">Veja nossas instalações, eventos e fique por dentro de tudo!</p></p>
-      </div>
-    </section>
-
-    <!-- MAIN CONTENT -->
+    <!-- MAIN CONTENT: galeria e eventos da temporada -->
     <main class="container-fluid bg-dark-purple text-white">
         <!-- galeria -->
         <section class="position-relative text-white text-center">
             <div class="row align-items-center p-2">
-
                 <!-- Texto -->
                 <div class="col-md-12 pt-4">
                     <h1 class="fw-bold text-uppercase">Zona de Spawn</h1>
                     <p class="font-monospace">
-                        Explore nossa estrutura digna de qualquer campanha épica. <br> Equipamentos de última geração,
+                        Explore nossa estrutura digna de qualquer campanha épica.<br>Equipamentos de última geração,
                         salas temáticas e tudo o que você precisa para subir de nível com estilo!
                     </p>
                 </div>
@@ -74,9 +85,8 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-12 mb-4">
                         <div class="border rounded p-4 zoom-effect image-gallery-item" data-bs-toggle="modal"
-                     data-bs-target="#imageModal"
-                     data-image-src="../assets/images/galeria-1.jpeg"
-                     style="cursor: pointer;">
+                            data-bs-target="#imageModal" data-image-src="../assets/images/galeria-1.jpeg"
+                            style="cursor: pointer;">
                             <img src="../assets/images/galeria-1.jpeg" class="w-100 shadow-1-strong rounded mb-4"
                                 alt="área de exercícios" />
                             <p class="text-warning">Zona de Grind</p>
@@ -84,9 +94,8 @@
                     </div>
                     <div class="col-lg-4 col-md-12 mb-4">
                         <div class="border rounded p-4 zoom-effect image-gallery-item" data-bs-toggle="modal"
-                     data-bs-target="#imageModal"
-                     data-image-src="../assets/images/galeria-2.jpeg"
-                     style="cursor: pointer;">
+                            data-bs-target="#imageModal" data-image-src="../assets/images/galeria-2.jpeg"
+                            style="cursor: pointer;">
                             <img src="../assets/images/galeria-2.jpeg" class="w-100 shadow-1-strong rounded mb-4"
                                 alt="área da piscina" />
                             <p class="text-warning">Mapa Aquático</p>
@@ -94,9 +103,8 @@
                     </div>
                     <div class="col-lg-4 mb-4">
                         <div class="border rounded p-4 zoom-effect image-gallery-item" data-bs-toggle="modal"
-                     data-bs-target="#imageModal"
-                     data-image-src="../assets/images/galeria-3.jpeg"
-                     style="cursor: pointer;">
+                            data-bs-target="#imageModal" data-image-src="../assets/images/galeria-3.jpeg"
+                            style="cursor: pointer;">
                             <img src="../assets/images/galeria-3.jpeg" class="w-100 shadow-1-strong rounded mb-4"
                                 alt="área da ginástica" />
                             <p class="text-warning">Dojo Zen</p>
@@ -104,9 +112,8 @@
                     </div>
                     <div class="col-lg-4 mb-4">
                         <div class="border rounded p-4 zoom-effect image-gallery-item" data-bs-toggle="modal"
-                     data-bs-target="#imageModal"
-                     data-image-src="../assets/images/galeria-4.jpeg"
-                     style="cursor: pointer;">
+                            data-bs-target="#imageModal" data-image-src="../assets/images/galeria-4.jpeg"
+                            style="cursor: pointer;">
                             <img src="../assets/images/galeria-4.jpeg" class="w-100 shadow-1-strong rounded mb-4"
                                 alt="área kids" />
                             <p class="text-warning">Área Kids: Mini-Heróis </p>
@@ -114,9 +121,8 @@
                     </div>
                     <div class="col-lg-4 mb-4">
                         <div class="border rounded p-4 zoom-effect image-gallery-item" data-bs-toggle="modal"
-                     data-bs-target="#imageModal"
-                     data-image-src="../assets/images/galeria-5.jpeg"
-                     style="cursor: pointer;">
+                            data-bs-target="#imageModal" data-image-src="../assets/images/galeria-5.jpeg"
+                            style="cursor: pointer;">
                             <img src="../assets/images/galeria-5.jpeg" class="w-100 shadow-1-strong rounded mb-4"
                                 alt="área do vestiário" />
                             <p class="text-warning">Checkpoint de Respawn</p>
@@ -124,9 +130,8 @@
                     </div>
                     <div class="col-lg-4 mb-4">
                         <div class="border rounded p-4 zoom-effect image-gallery-item" data-bs-toggle="modal"
-                     data-bs-target="#imageModal"
-                     data-image-src="../assets/images/galeria-6.jpeg"
-                     style="cursor: pointer;">
+                            data-bs-target="#imageModal" data-image-src="../assets/images/galeria-6.jpeg"
+                            style="cursor: pointer;">
                             <img src="../assets/images/galeria-6.jpeg" class="w-100 shadow-1-strong rounded mb-4"
                                 alt="área de lanches" />
                             <p class="text-warning">Taverna do Buff</p>
@@ -139,18 +144,19 @@
         <!-- Modal -->
 
         <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title text-white" id="imageModalLabel">Imagem</h5>
-                <button type="button" class="btn-close" onclick="location.reload();" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <img src="" class="img-fluid" id="modalImage" alt="Enlarged Image">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-white" id="imageModalLabel">Imagem</h5>
+                        <button type="button" class="btn-close" onclick="location.reload();"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="" class="img-fluid" id="modalImage" alt="Enlarged Image">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
 
         <!-- eventos da temporada -->
         <section class="position-relative text-white text-center">
@@ -169,10 +175,10 @@
                         <div class="border rounded h-100 p-4 d-flex flex-column">
                             <div class="ratio ratio-21x9">
                                 <img src="../assets/images/galeria-card-1.png" class="card-img-top p-2 object-fit-cover"
-                                    alt="...">
+                                    alt="pessoas correndo felizes">
                             </div>
                             <div class="card-body d-flex flex-column">
-                                <h5 class="card-title pb-2"> Raid da Resistência</h5>
+                                <h5 class="card-title pb-2">Raid da Resistência</h5>
                                 <div class="font-monospace pb-2"><small>18 de Maio | 10h às 12h</small></div>
                                 <p class="card-text font-monospace pb-2">
                                     Reúna seu squad para uma sessão de HIIT cooperativa de tirar o fôlego. Várias
@@ -190,10 +196,10 @@
                         <div class="border rounded h-100 p-4 d-flex flex-column">
                             <div class="ratio ratio-21x9">
                                 <img src="../assets/images/galeria-card-2.png" class="card-img-top p-2 object-fit-cover"
-                                    alt="...">
+                                    alt="pessoas fazendo exercícios">
                             </div>
                             <div class="card-body d-flex flex-column">
-                                <h5 class="card-title pb-2"> Concentração de Magos</h5>
+                                <h5 class="card-title pb-2">Concentração de Magos</h5>
                                 <div class="font-monospace pb-2"><small>22 de Maio | 19h às 20h30</small></div>
                                 <p class="card-text font-monospace pb-2">
                                     Uma aula especial de Yoga com música relaxante em 8-bits. Venha
@@ -211,7 +217,7 @@
                         <div class="border rounded h-100 p-4 d-flex flex-column">
                             <div class="ratio ratio-21x9">
                                 <img src="../assets/images/galeria-card-3.png" class="card-img-top p-2 object-fit-cover"
-                                    alt="...">
+                                    alt="pessoas fazendo exercício de musculação">
                             </div>
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title pb-2">Torneio da Fortaleza</h5>
@@ -231,7 +237,7 @@
                         <div class="border rounded h-100 p-4 d-flex flex-column">
                             <div class="ratio ratio-21x9">
                                 <img src="../assets/images/galeria-card-4.png" class="card-img-top p-2 object-fit-cover"
-                                    alt="...">
+                                    alt="pessoas festejando">
                             </div>
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title pb-2">Festa de Level Up</h5>
@@ -252,15 +258,19 @@
         </section>
     </main>
 
-    <!-- Chamada para ação | FORM -->
+    <!-- ASIDE: Chamada para ação | form -->
     <aside>
         <section class="bg-light py-5 bg-dark text-white">
-            <div class="text-center">
-                <h2 class="fw-bold text-uppercase pb-2">Conecte-se ao Servidor Oficial da Game Up!</h2>
-                <p class="font-monospace mx-auto w-50 pb-2">Cadastre seu e-mail e entre na nossa rede de jogadores
-                    lendários.
-                    Receba atualizações de eventos, missões exclusivas, dicas de treino e recompensas bônus direto na
-                    sua caixa de entrada.</p>
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="text-center col-8">
+                    <h2 class="fw-bold text-uppercase pb-2">Conecte-se ao Servidor Oficial da Game Up!</h2>
+                    <p class="font-monospace mx-auto pb-2">
+                        Cadastre seu e-mail e entre na nossa rede de jogadores lendários.
+                        Receba atualizações de eventos, missões exclusivas, dicas de treino e recompensas bônus direto
+                        na
+                        sua caixa de entrada.
+                    </p>
+                </div>
             </div>
             <div class="container text-center">
                 <form class="mx-auto w-50" novalidate>
@@ -279,37 +289,38 @@
                     </div>
 
                     <div class="col-auto">
-                        <button type="submit" class="btn btn-info text-white px-4 py-2">Start</button>
+                        <a href="#" class="btn btn-info text-white px-4 py-2">Start</a>
                     </div>
                 </form>
             </div>
-        </section>
-    </aside>
 
-    <!-- modal de termos e condições -->
-    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="termsModalLabel">Termos e Condições Game-Up</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body font-monospace">
-                    <p>Leia atentamente os termos e condições abaixo:</p>
-                    <ul>
-                        <li>Termo 1: O uso do nosso serviço está sujeito a políticas específicas.</li>
-                        <li>Termo 2: Você concorda em não violar as leis aplicáveis.</li>
-                        <li>Termo 3: O acesso ao serviço é restrito a usuários autorizados.</li>
-                        <li>Termo 4: Seus dados pessoais são tratados de acordo com nossa política de privacidade.</li>
-                    </ul>
-                    <p>Ao continuar, você concorda com todos os termos acima.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+            <!-- modal de termos e condições -->
+            <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="termsModalLabel">Termos e Condições Game-Up</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body font-monospace">
+                            <p>Leia atentamente os termos e condições abaixo:</p>
+                            <ul>
+                                <li>Termo 1: O uso do nosso serviço está sujeito a políticas específicas.</li>
+                                <li>Termo 2: Você concorda em não violar as leis aplicáveis.</li>
+                                <li>Termo 3: O acesso ao serviço é restrito a usuários autorizados.</li>
+                                <li>Termo 4: Seus dados pessoais são tratados de acordo com nossa política de
+                                    privacidade.</li>
+                            </ul>
+                            <p>Ao continuar, você concorda com todos os termos acima.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </aside>
 
     <!-- FOOTER -->
     <footer class="text-center py-4 bg-indigo">
@@ -343,7 +354,7 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
 
-        <script src="../javascript/script.js"></script>
+    <script src="../javascript/script.js"></script>
 
 </body>
 
