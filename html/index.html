@@ -12,298 +12,320 @@
 
 <body class="bg-dark-purple text-white">
 
-    <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg bg-navy sticky-top">
-        <div class="container py-3 gap-5">
-            <a class="navbar-brand fw-bold" href="../html/index.html">
-                <img src="../assets/images/logo.png" alt="Logo" height="30" class="zoom-effect">
-            </a>
+    <!-- HEADER: nav, title and subtitle -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-navy sticky-top">
+            <div class="container py-3 gap-5">
+                <a class="navbar-brand fw-bold" href="../html/index.html">
+                    <img src="../assets/images/logo.png" alt="Logo" height="30" class="zoom-effect">
+                </a>
 
-            <!-- Toggler button for collapse -->
-            <button class="navbar-toggler text-white bg-success" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <!-- Toggler button for collapse -->
+                <button class="navbar-toggler text-white bg-success" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <!-- Collapsible content -->
-            <div class="collapse navbar-collapse justify-content-center align-items-center gap-5" id="navbarContent">
-                <ul class="navbar-nav flex-lg-row flex-column text-center">
-                    <li class="nav-item zoom-effect"><a class="nav-link text-white" href="../html/treinos.html">TREINOS</a></li>
-                    <li class="nav-item zoom-effect"><a class="nav-link text-white" href="../html/instrutores.html">INSTRUTORES</a>
-                    </li>
-                    <li class="nav-item zoom-effect"><a class="nav-link text-white" href="../html/planos.html">PLANOS</a></li>
-                    <li class="nav-item zoom-effect"><a class="nav-link text-white" href="../html/galeria.html">GALERIA</a></li>
-                    <li class="nav-item zoom-effect"><a class="nav-link text-white" href="../html/contatos.html">CONTATOS</a></li>
-                </ul>
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse justify-content-center align-items-center gap-5"
+                    id="navbarContent">
+                    <ul class="navbar-nav flex-lg-row flex-column text-center">
+                        <li class="nav-item zoom-effect">
+                            <a class="nav-link text-white" href="../html/treinos.html">TREINOS</a>
+                        </li>
+                        <li class="nav-item zoom-effect">
+                            <a class="nav-link text-white" href="../html/instrutores.html">INSTRUTORES</a>
+                        </li>
+                        <li class="nav-item zoom-effect">
+                            <a class="nav-link text-white" href="../html/planos.html">PLANOS</a>
+                        </li>
+                        <li class="nav-item zoom-effect">
+                            <a class="nav-link text-white" href="../html/galeria.html">GALERIA</a>
+                        </li>
+                        <li class="nav-item zoom-effect">
+                            <a class="nav-link text-white" href="../html/contatos.html">CONTATOS</a>
+                        </li>
+                    </ul>
 
-                <!-- Buttons -->
-            <div class="d-flex gap-2 mt-3 mt-lg-0 justify-content-center align-items-center">
-                <button class="btn btn-success"> <a href="../html/signin.html" class="text-white nav-link">Continuar Missão</a></button>
-                <button class="btn btn-info text-white"><a href="../html/signup.html" class="text-white nav-link">Novo Jogo</a></button>
-              </div>
+                    <!-- Buttons -->
+                    <div class="d-flex gap-2 mt-3 mt-lg-0 justify-content-center align-items-center">
+                        <a href="../html/signin.html" class="btn btn-success text-white">Continuar Missão</a>
+                        <a href="../html/signup.html" class="btn btn-info text-white">Novo Jogo</a>
+                    </div>
+                </div>
             </div>
-          </div>
-    </nav>
+        </nav>
 
-    <!-- Hero Section -->
-    <section class="position-relative text-white text-center">
-        <!-- Imagem de fundo -->
-        <img src="../assets/images/hero-index.jpeg" alt="Hero Background"
-            class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover opacity-50" />
-        <div class="position-relative d-flex flex-column justify-content-center align-items-center vh-100">
-            <h1 class="display-1 fw-bold">GAME UP</h1>
-            <p class="lead font-monospace display-5">Power up para corpo e mente!</p>
-        </div>
-    </section>
+        <!-- Hero Section -->
+        <section class="position-relative text-white text-center">
+            <!-- Imagem de fundo -->
+            <img src="../assets/images/hero-index.jpeg" alt="Hero Background"
+                class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover opacity-50" />
+            <div class="position-relative d-flex flex-column justify-content-center align-items-center vh-100">
+                <h1 class="display-1 fw-bold">GAME UP</h1>
+                <p class="lead font-monospace display-5 px-2">Power up para corpo e mente!</p>
+            </div>
+        </section>
+    </header>
 
-    <!-- Sessão da campanha -->
-    <section class="container my-5">
-        <div class="row align-items-center">
+    <!-- MAIN -->
+    <main>
+        <!-- Sessão da campanha -->
+        <section class="container my-5">
+            <div class="row align-items-center">
+
+                <!-- Texto -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h3 class="fw-bold text-uppercase">A sua academia em modo campanha!</h3>
+                    <p class="font-monospace">
+                        Aqui, cada treino é uma fase, cada gota de suor vale XP, e o seu corpo é o personagem principal.
+                        Suba de nível com treinos personalizados, desbloqueie conquistas reais e entre no ranking dos
+                        que
+                        não desistem da missão. Está pronto para evoluir? Pressione <strong>Novo Jogo</strong> e comece
+                        agora a sua jornada!
+                    </p>
+                </div>
+
+                <!-- Imagem ao lado -->
+                <div class="col-md-6">
+                    <div class="position-relative overflow-hidden ratio ratio-16x9 rounded">
+                        <img src="../assets/images/second-section-index.jpeg"
+                            class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Campanha">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Horários de funcionamento -->
+        <section class="container-fluid p-5 text-center bg-info">
+            <h4 class="fw-bold text-uppercase py-3">Status do Portal</h4>
+            <div class="d-flex flex-column flex-md-row justify-content-center gap-5">
+                <div>
+                    <p class="font-monospace">Segunda a Sexta: 08:00 ~ 22:00<br>Sábado: 08:00 ~ 18:00<br>Domingo: 09:00
+                        ~
+                        14:00</p>
+                </div>
+                <div>
+                    <p class="font-monospace">Status Atual: <strong class="bg-green">ONLINE</strong><br>Latência: Baixa
+                        |
+                        Sem filas de espera</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Classes -->
+        <section class="container-fluid p-5 text-center bg-navy">
+            <h4 class="fw-bold text-uppercase py-3">Aqui você pode escolher a sua classe</h4>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="../html/treinos.html#treinos-tank" target="_blank" class="text-decoration-none">
+                        <div class="border p-3 rounded zoom-effect">
+                            <img src="../assets/images/tank.jpeg" class="img-fluid mb-2" alt="Tank">
+                            <h5 class="fw-bold text-white">TANK</h5>
+                            <p class="small font-monospace text-white">Força e musculação</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="../html/treinos.html#treinos-rogue" target="_blank" class="text-decoration-none">
+                        <div class="border p-3 rounded zoom-effect">
+                            <img src="../assets/images/rogue.jpeg" class="img-fluid mb-2" alt="Rogue">
+                            <h5 class="fw-bold text-white">ROGUE</h5>
+                            <p class="small font-monospace text-white">Treinos funcionais e de agilidade</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="../html/treinos.html#treinos-mago" target="_blank" class="text-decoration-none">
+                        <div class="border p-3 rounded zoom-effect">
+                            <img src="../assets/images/mago.jpeg" class="img-fluid mb-2" alt="Mago">
+                            <h5 class="fw-bold text-white">MAGO</h5>
+                            <p class="small font-monospace text-white">Yoga e flexibilidade</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="../html/treinos.html#treinos-sobrevivente" target="_blank" class="text-decoration-none">
+                        <div class="border p-3 rounded zoom-effect">
+                            <img src="../assets/images/hiit.jpeg" class="img-fluid mb-2" alt="Sobrevivente">
+                            <h5 class="fw-bold text-white">SOBREVIVENTE</h5>
+                            <p class="small font-monospace text-white">HIIT e resistência</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Missões Diárias -->
+        <section class="container-fluid p-5 bg-navy text-white text-center">
+            <h4 class="fw-bold text-uppercase">Missões Diárias — Complete | Evolua | Conquiste!</h4>
 
             <!-- Texto -->
-            <div class="col-md-6 mb-4 mb-md-0">
-                <h3 class="fw-bold text-uppercase">A sua academia em modo campanha!</h3>
-                <p class="font-monospace">
-                    Aqui, cada treino é uma fase, cada gota de suor vale XP, e o seu corpo é o personagem principal.
-                    Suba de nível com treinos personalizados, desbloqueie conquistas reais e entre no ranking dos que
-                    não desistem da missão. Está pronto para evoluir? Pressione <strong>Novo Jogo</strong> e comece
-                    agora a sua jornada!
-                </p>
-            </div>
-
-            <!-- Imagem ao lado -->
-            <div class="col-md-6">
-                <div class="position-relative overflow-hidden ratio ratio-16x9 rounded">
-                    <img src="../assets/images/second-section-index.jpeg"
-                        class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Campanha">
+            <div class="row justify-content-center mt-4">
+                <div class="col-12 col-md-8">
+                    <p class="font-monospace">
+                        Na Game Up, cada treino é uma missão. Você escolhe o seu nível, enfrenta os desafios e
+                        desbloqueia
+                        recompensas reais.
+                        Missão dada é missão cumprida, recruta. Partiu upar?
+                    </p>
                 </div>
             </div>
 
-        </div>
-    </section>
-
-    <!-- Horários de funcionamento -->
-    <section class="container-fluid p-5 text-center bg-info">
-        <h4 class="fw-bold text-uppercase py-3">Status do Portal</h4>
-        <div class="d-flex flex-column flex-md-row justify-content-center gap-5">
-            <div>
-                <p class="font-monospace">Segunda a Sexta: 08:00 ~ 22:00<br>Sábado: 08:00 ~ 18:00<br>Domingo: 09:00 ~
-                    14:00</p>
+            <!-- Imagem abaixo do texto -->
+            <div class="position-relative w-100 ratio ratio-21x9 mt-4">
+                <img src="../assets/images/fourth-section-index.jpeg" class="w-100 h-100 object-fit-cover rounded"
+                    alt="Campanha">
             </div>
-            <div>
-                <p class="font-monospace">Status Atual: <strong class="bg-green">ONLINE</strong><br>Latência: Baixa |
-                    Sem filas de espera</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Classes -->
-    <section class="container-fluid p-5 text-center bg-navy ">
-        <h4 class="fw-bold text-uppercase py-3">Aqui você pode escolher a sua classe</h4>
-        <div class="row g-4">
-            <div class="col-12 col-md-3">
-                <a href="../html/treinos.html#treinos-tank" target="_blank" class="text-decoration-none">
-                <div class="border p-3 rounded zoom-effect">
-                    <img src="../assets/images/tank.jpeg" class="img-fluid mb-2" alt="Tank">
-                    <h5 class="fw-bold text-white">TANK</h5>
-                    <p class="small font-monospace text-white">Força e musculação</p>
-                </div>
-                </a>
-            </div>
-            <div class="col-12 col-md-3">
-                <a href="../html/treinos.html#treinos-rogue" target="_blank" class="text-decoration-none">
-                <div class="border p-3 rounded zoom-effect">
-                    <img src="../assets/images/rogue.jpeg" class="img-fluid mb-2" alt="Rogue">
-                    <h5 class="fw-bold text-white">ROGUE</h5>
-                    <p class="small font-monospace text-white">Treinos funcionais e de agilidade</p>
-                </div>
-                </a>
-            </div>
-            <div class="col-12 col-md-3">
-                <a href="../html/treinos.html#treinos-mago" target="_blank" class="text-decoration-none">
-                <div class="border p-3 rounded zoom-effect">
-                    <img src="../assets/images/mago.jpeg" class="img-fluid mb-2" alt="Mago">
-                    <h5 class="fw-bold text-white">MAGO</h5>
-                    <p class="small font-monospace text-white">Yoga e flexibilidade</p>
-                </div>
-                </a>
-            </div>
-            <div class="col-12 col-md-3">
-                <a href="../html/treinos.html#treinos-sobrevivente" target="_blank" class="text-decoration-none">
-                <div class="border p-3 rounded zoom-effect">
-                    <img src="../assets/images/hiit.jpeg" class="img-fluid mb-2" alt="Sobrevivente">
-                    <h5 class="fw-bold text-white">SOBREVIVENTE</h5>
-                    <p class="small font-monospace text-white">HIIT e resistência</p>
-                </div>
-                </a>
-            </div>
-        </div>
-    </section>
+    <!-- ASIDE: Avaliações e Chamada para ação-->
+    <aside>
+        <section class="container my-5 text-center">
+            <h4 class="fw-bold text-uppercase mb-4">Avaliação dos Jogadores</h4>
+            <div class="row g-4">
 
-    <!-- Missões Diárias -->
-    <section class="container-fluid p-5 bg-navy text-white text-center">
-        <h4 class="fw-bold text-uppercase">Missões Diárias — Complete | Evolua | Conquiste!</h4>
-
-        <!-- Texto -->
-        <div class="row justify-content-center mt-4">
-            <div class="col-12 col-md-8">
-                <p class="font-monospace">
-                    Na Game Up, cada treino é uma missão. Você escolhe o seu nível, enfrenta os desafios e desbloqueia
-                    recompensas reais.
-                    Missão dada é missão cumprida, recruta. Partiu upar?
-                </p>
-            </div>
-        </div>
-
-        <!-- Imagem abaixo do texto -->
-        <div class="position-relative w-100 ratio ratio-21x9 mt-4">
-            <img src="../assets/images/fourth-section-index.jpeg" class="w-100 h-100 object-fit-cover rounded"
-                alt="Campanha">
-        </div>
-    </section>
-
-    <!-- Avaliações -->
-    <section class="container my-5 text-center">
-        <h4 class="fw-bold text-uppercase mb-4">Avaliação dos Jogadores</h4>
-        <div class="row g-4">
-
-            <!-- Avaliação 1 -->
-            <div class="col-md-4">
-                <div class="border rounded p-4 h-100 text-start">
-                    <!--stars-->
-                    <div class="mb-2 text-warning">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-star-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-star-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-star-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-star-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-star-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                        </svg>
-                    </div>
-                    <h5 class="fw-bold">Ficando Big</h5>
-                    <p class="fst-italic font-monospace">"Musculação com pegada de boss fight. Nunca pensei que levantar
-                        peso pareceria tão épico. A interface gamificada me manteve no foco!"</p>
-                    <div class="d-flex align-items-center gap-2 mt-3">
-                        <img src="../assets/images/icon-index-1.png" alt="Ícone de Colossus90" class="rounded-circle"
-                            width="32" height="32">
-                        <small><strong>Colossus90</strong> — Classe: Tank</small>
+                <!-- Avaliação 1 -->
+                <div class="col-md-4">
+                    <div class="border rounded p-4 h-100 text-start">
+                        <!--stars-->
+                        <div class="mb-2 text-warning">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </div>
+                        <h5 class="fw-bold">Ficando Big</h5>
+                        <p class="fst-italic font-monospace">"Musculação com pegada de boss fight. Nunca pensei que
+                            levantar
+                            peso pareceria tão épico. A interface gamificada me manteve no foco!"</p>
+                        <div class="d-flex align-items-center gap-2 mt-3">
+                            <img src="../assets/images/icon-index-1.png" alt="Ícone de Colossus90"
+                                class="rounded-circle" width="32" height="32">
+                            <small><strong>Colossus90</strong> — Classe: Tank</small>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Avaliação 2 -->
-            <div class="col-md-4">
-                <div class="border rounded p-4 h-100 text-start">
-                    <!--stars-->
-                    <div class="mb-2 text-warning">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-star-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-star-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-star-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-star-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-star-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                        </svg>
-                    </div>
-                    <h5 class="fw-bold">Só no Up!</h5>
-                    <p class="fst-italic font-monospace">"O treino de flexibilidade é digno de uma verdadeira
-                        conjuradora! Me sinto mais ágil desde a primeira semana. Recomendo pra todas as sábias de
-                        plantão."</p>
-                    <div class="d-flex align-items-center gap-2 mt-3">
-                        <img src="../assets/images/icon-index-2.png" alt="Ícone de MagaDoStretch" class="rounded-circle"
-                            width="32" height="32">
-                        <small><strong>MagaDoStretch</strong> — Classe: Mago</small>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Avaliação 3 -->
-            <div class="col-md-4">
-                <div class="border rounded p-4 h-100 text-start">
-                    <!--stars-->
-                    <div class="mb-2 text-warning">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-star-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-star-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-star-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-star-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-star-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                        </svg>
-                    </div>
-                    <h5 class="fw-bold">Viciante</h5>
-                    <p class="fst-italic font-monospace">"Entrei achando que ia só testar… agora tô no level 20 de
-                        motivação. Os desafios semanais são como quests diárias: vicia demais completar. Já desbloqueei
-                        3 badges e subi no ranking da guilda"</p>
-                    <div class="d-flex align-items-center gap-2 mt-3">
-                        <img src="../assets/images/icon-index-3.png" alt="Ícone de CyberNoob" class="rounded-circle"
-                            width="32" height="32">
-                        <small><strong>CyberNoob</strong> — Classe: Rogue</small>
+                <!-- Avaliação 2 -->
+                <div class="col-md-4">
+                    <div class="border rounded p-4 h-100 text-start">
+                        <!--stars-->
+                        <div class="mb-2 text-warning">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </div>
+                        <h5 class="fw-bold">Só no Up!</h5>
+                        <p class="fst-italic font-monospace">"O treino de flexibilidade é digno de uma verdadeira
+                            conjuradora! Me sinto mais ágil desde a primeira semana. Recomendo pra todas as sábias de
+                            plantão."</p>
+                        <div class="d-flex align-items-center gap-2 mt-3">
+                            <img src="../assets/images/icon-index-2.png" alt="Ícone de MagaDoStretch"
+                                class="rounded-circle" width="32" height="32">
+                            <small><strong>MagaDoStretch</strong> — Classe: Mago</small>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Avaliação 3 -->
+                <div class="col-md-4">
+                    <div class="border rounded p-4 h-100 text-start">
+                        <!--stars-->
+                        <div class="mb-2 text-warning">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </div>
+                        <h5 class="fw-bold">Viciante</h5>
+                        <p class="fst-italic font-monospace">"Entrei achando que ia só testar… agora tô no level 20 de
+                            motivação. Os desafios semanais são como quests diárias: vicia demais completar. Já
+                            desbloqueei
+                            3 badges e subi no ranking da guilda"</p>
+                        <div class="d-flex align-items-center gap-2 mt-3">
+                            <img src="../assets/images/icon-index-3.png" alt="Ícone de CyberNoob" class="rounded-circle"
+                                width="32" height="32">
+                            <small><strong>CyberNoob</strong> — Classe: Rogue</small>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+        </section>
 
-        </div>
-    </section>
-
-    <!-- Chamada para ação -->
-    <section class="text-center bg-light py-5 bg-dark text-white">
-        <h2 class="fw-bold text-uppercase">Pronto para iniciar missão?</h2>
-        <button class="btn btn-info text-white mt-3 px-4 py-2">NOVO JOGO</button>
-    </section>
+        <section class="text-center bg-light py-5 bg-dark text-white">
+            <h2 class="fw-bold text-uppercase">Pronto para iniciar missão?</h2>
+            <a href="../html/signup.html" class="btn btn-info text-white mt-3 px-4 py-2">NOVO JOGO</a>
+        </section>
+    </aside>
 
     <!-- FOOTER -->
     <footer class="text-center py-4 bg-indigo">
@@ -337,9 +359,7 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
 
-        <script src="../javascript/script.js"></script>
-
-
+    <script src="../javascript/script.js"></script>
 </body>
 
 </html>

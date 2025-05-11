@@ -4,78 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Continuar Missão - Game Up</title>
+    <title>Game Up - Continuar Missão</title>
     <link rel="stylesheet" href="../assets/bootstrap/custom.css">
     <link rel="stylesheet" href="../assets/bootstrap/bootstrap.css">
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 
-<!-- doc para copiar modelos que se repetem. Sempre lembrar de mudar para a branch a ser trabalhada -->
-<!-- esse doc será destruído quando o projeto terminar -->
-<!-- Para chamar as fontes: [Silkscreen - Fonte mais pixelada] ex: text-info, text-primary... etc.  
-                            [Space Mono - Fonte mais redondinha] ex: font-monospace text-warning... etc.
--->
-
 <body class="d-flex flex-column min-vh-100 bg-dark-purple">
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-navy sticky-top">
-        <div class="container py-3 gap-5">
-            <a class="navbar-brand fw-bold" href="../html/index.html">
-                <img src="../assets/images/logo.png" alt="Logo" height="30">
-            </a>
+    <!-- HEADER: nav -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-navy sticky-top">
+            <div class="container py-3 gap-5">
+                <a class="navbar-brand fw-bold" href="../html/index.html">
+                    <img src="../assets/images/logo.png" alt="Logo" height="30" class="zoom-effect">
+                </a>
 
-            <!-- Toggler button for collapse -->
-            <button class="navbar-toggler text-white bg-success" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <!-- Toggler button for collapse -->
+                <button class="navbar-toggler text-white bg-success" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <!-- Collapsible content -->
-            <div class="collapse navbar-collapse justify-content-center align-items-center gap-5" id="navbarContent">
-                <ul class="navbar-nav flex-lg-row flex-column text-center">
-                    <li class="nav-item"><a class="nav-link text-white" href="../html/treinos.html">TREINOS</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="../html/instrutores.html">INSTRUTORES</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link text-white" href="../html/planos.html">PLANOS</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="../html/galeria.html">GALERIA</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="../html/contatos.html">CONTATOS</a></li>
-                </ul>
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse justify-content-center align-items-center gap-5"
+                    id="navbarContent">
+                    <ul class="navbar-nav flex-lg-row flex-column text-center">
+                        <li class="nav-item zoom-effect">
+                            <a class="nav-link text-white" href="../html/treinos.html">TREINOS</a>
+                        </li>
+                        <li class="nav-item zoom-effect">
+                            <a class="nav-link text-white" href="../html/instrutores.html">INSTRUTORES</a>
+                        </li>
+                        <li class="nav-item zoom-effect">
+                            <a class="nav-link text-white" href="../html/planos.html">PLANOS</a>
+                        </li>
+                        <li class="nav-item zoom-effect">
+                            <a class="nav-link text-white" href="../html/galeria.html">GALERIA</a>
+                        </li>
+                        <li class="nav-item zoom-effect">
+                            <a class="nav-link text-white" href="../html/contatos.html">CONTATOS</a>
+                        </li>
+                    </ul>
 
-                <!-- Buttons -->
-                <div class="d-flex gap-2 mt-3 mt-lg-0 justify-content-center align-items-center">
-                    <button class="btn btn-info text-white"><a href="../html/signup.html" class="text-white nav-link">Novo Jogo</a></button>
+                    <!-- Buttons -->
+                    <div class="d-flex gap-2 mt-3 mt-lg-0 justify-content-center align-items-center">
+                        <a href="../html/signup.html" class="btn btn-info text-white">Novo Jogo</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- MAIN -->
-    <section class="flex-grow-1 d-flex justify-content-center align-items-center p-2">
-        <div class="text-center">
-            <h1 class="text-warning mb-4">Continuar Missão</h1>
-            <form class="p-4 rounded-4 text-green border border-warning mx-auto">
-                <div class="mb-3 text-start">
-                    <label for="nickname" class="form-label m-0 text-warning">Nickname do Jogador:</label>
-                    <input type="text" class="form-control font-monospace bg-transparent text-white" id="nickname">
-                </div>
-                <div class="mb-3 text-start">
-                    <label for="password" class="form-label m-0 text-warning">Senha:</label>
-                    <input type="password" class="form-control font-monospace bg-transparent text-white" id="password">
-                </div>
-                <div class="container-flex text-center">
-                    <button type="button" class="btn btn-blue text-warning rounded border border-warning w-50 mb-2"
-                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                        Continuar
-                    </button>
-                    <button type="button" class="btn btn-blue text-gray w-50" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop">
-                        <a href="../html/signup.html" class="link-dark">Novo Jogo</a>
-                    </button>
-                </div>
-            </form>
-        </div>
-    </section>
+    <main class="flex-grow-1 d-flex justify-content-center align-items-center">
+        <section class="flex-grow-1 d-flex justify-content-center align-items-center p-2">
+            <div class="text-center">
+                <h1 class="text-warning mb-4">Continuar Missão</h1>
+                <form class="p-4 rounded-4 text-green border border-warning mx-auto">
+                    <div class="mb-3 text-start">
+                        <label for="nickname" class="form-label m-0 text-warning">Nickname do Jogador:</label>
+                        <input type="text" class="form-control font-monospace bg-transparent text-white" id="nickname">
+                    </div>
+                    <div class="mb-3 text-start">
+                        <label for="password" class="form-label m-0 text-warning">Senha:</label>
+                        <input type="password" class="form-control font-monospace bg-transparent text-white"
+                            id="password">
+                    </div>
+                    <div class="container-flex text-center">
+                        <a href="#" class="btn text-warning rounded border border-warning w-50 mb-2"
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Continuar Missão
+                        </a>
+                        <a href="../html/signup.html" class="btn text-gray w-50">
+                            Novo Jogo
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <!-- FOOTER -->
     <footer class="text-center py-4 bg-indigo">

@@ -11,343 +11,361 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-navy sticky-top">
-        <div class="container py-3 gap-5">
-            <a class="navbar-brand fw-bold" href="../html/index.html">
-                <img src="../assets/images/logo.png" alt="Logo" height="30" class="zoom-effect">
-            </a>
 
-            <!-- Toggler button for collapse -->
-            <button class="navbar-toggler text-white bg-success" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <!-- HEADER: nav, title and subtitle -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-navy sticky-top">
+            <div class="container py-3 gap-5">
+                <a class="navbar-brand fw-bold" href="../html/index.html">
+                    <img src="../assets/images/logo.png" alt="Logo" height="30" class="zoom-effect">
+                </a>
 
-            <!-- Collapsible content -->
-            <div class="collapse navbar-collapse justify-content-center align-items-center gap-5" id="navbarContent">
-                <ul class="navbar-nav flex-lg-row flex-column text-center">
-                    <li class="nav-item zoom-effect"><a class="nav-link text-warning"
-                            href="../html/treinos.html">TREINOS</a></li>
-                    <li class="nav-item zoom-effect"><a class="nav-link text-white"
-                            href="../html/instrutores.html">INSTRUTORES</a>
-                    </li>
-                    <li class="nav-item zoom-effect"><a class="nav-link text-white"
-                            href="../html/planos.html">PLANOS</a></li>
-                    <li class="nav-item zoom-effect"><a class="nav-link text-white"
-                            href="../html/galeria.html">GALERIA</a></li>
-                    <li class="nav-item zoom-effect"><a class="nav-link text-white"
-                            href="../html/contatos.html">CONTATOS</a></li>
-                </ul>
+                <!-- Toggler button for collapse -->
+                <button class="navbar-toggler text-white bg-success" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                <!-- Buttons -->
-                <div class="d-flex gap-2 mt-3 mt-lg-0 justify-content-center align-items-center">
-                    <button class="btn btn-success"> <a href="../html/signin.html" class="text-white nav-link">Continuar
-                            Missão</a></button>
-                    <button class="btn btn-info text-white"><a href="../html/signup.html"
-                            class="text-white nav-link">Novo Jogo</a></button>
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse justify-content-center align-items-center gap-5"
+                    id="navbarContent">
+                    <ul class="navbar-nav flex-lg-row flex-column text-center">
+                        <li class="nav-item zoom-effect">
+                            <a class="nav-link text-warning" href="../html/treinos.html">TREINOS</a>
+                        </li>
+                        <li class="nav-item zoom-effect">
+                            <a class="nav-link text-white" href="../html/instrutores.html">INSTRUTORES</a>
+                        </li>
+                        <li class="nav-item zoom-effect">
+                            <a class="nav-link text-white" href="../html/planos.html">PLANOS</a>
+                        </li>
+                        <li class="nav-item zoom-effect">
+                            <a class="nav-link text-white" href="../html/galeria.html">GALERIA</a>
+                        </li>
+                        <li class="nav-item zoom-effect">
+                            <a class="nav-link text-white" href="../html/contatos.html">CONTATOS</a>
+                        </li>
+                    </ul>
+
+                    <!-- Buttons -->
+                    <div class="d-flex gap-2 mt-3 mt-lg-0 justify-content-center align-items-center">
+                        <a href="../html/signin.html" class="btn btn-success text-white">Continuar Missão</a>
+                        <a href="../html/signup.html" class="btn btn-info text-white">Novo Jogo</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="position-relative text-white text-center bg-dark-purple">
+            <div class="position-relative d-flex flex-column justify-content-center align-items-center pb-4">
+                <h1 class="display-1 fw-bold">Escolha a sua classe</h1>
+
+                <div class="bg-indigo w-100 pt-2">
+                    <p class="lead font-monospace">
+                        Aqui na Game Up, cada treino é uma classe. Qual será sua build?
+                    </p>
+                </div>
+
+            </div>
+        </section>
+    </header>
+
+    <!-- MAIN: treinos-->
+    <main>
+        <div class="bg-dark-purple p-3">
+            <!-- Card 1 -->
+            <div class="container-fluid text-white">
+                <div class="row min-vh-50 align-items-stretch justify-content-center">
+
+                    <!-- Imagem ao lado -->
+                    <div class="col-lg-4 d-flex p-3">
+                        <div class="position-relative overflow-hidden ratio ratio-1x1 w-100 border rounded mx-auto">
+                            <img src="../assets/images/treinos-1.png"
+                                class="position-absolute top-0 start-0 object-fit-cover rounded p-3" alt="Campanha">
+                        </div>
+                    </div>
+
+                    <!-- Conteúdo -->
+                    <div class="col-lg-8 d-flex flex-column justify-content-center p-2 text-center text-lg-start"
+                        id="treinos-tank">
+                        <h2>CLASSE TANK</h2>
+                        <p class="font-monospace">
+                            <strong>Especialidade:</strong> Força, hipertrofia, músculos definidos
+                        </p>
+                        <p class="font-monospace">
+                            <strong>Bônus de Classe:</strong> +50 Força | +30 Defesa | +20 de estilo na hora do pump
+                        </p>
+
+                        <div class="font-monospace">
+                            <div class=" bg-dark-purple">
+                                <p class="text-white fs-4">
+                                    Se você quer se tornar o escudo da party, essa é a sua classe. Com treinos voltados
+                                    para
+                                    musculação e carga progressiva, a CLASSE TANK aumenta sua força bruta e resistência
+                                    muscular. É o build ideal para quem busca hipertrofia e explosão física.
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <p class="p-2 bg-green rounded mt-1 font-monospace text-center">
+                        <small><strong>Atividades principais:</strong> Powerlifting, Treinamento de Strongman,
+                            Musculação
+                            Clássica | O dia todo</small>
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-dark-purple">
+                <div class="container-fluid text-white">
+                    <div class="row min-vh-50 align-items-stretch justify-content-center">
+
+                        <!-- Imagem ao lado -->
+                        <div class="col-lg-4 d-flex p-3">
+                            <div class="position-relative overflow-hidden ratio ratio-1x1 w-100 border rounded mx-auto">
+                                <img src="../assets/images/treinos-2.png"
+                                    class="position-absolute top-0 start-0 object-fit-cover rounded p-3" alt="Campanha">
+                            </div>
+                        </div>
+
+                        <!-- Conteúdo -->
+                        <div class="col-lg-8 d-flex flex-column justify-content-center p-2 text-center text-lg-start"
+                            id="treinos-rogue">
+                            <h2>CLASSE ROGUE</h2>
+                            <p class="font-monospace">
+                                <strong>Especialidade:</strong> Agilidade, funcional
+                            </p>
+                            <p class="font-monospace">
+                                <strong>Bônus de Classe:</strong> +40 Agilidade | +25 Reflexos | +15 Esquiva de preguiça
+                            </p>
+
+                            <div class="font-monospace">
+                                <div class=" bg-dark-purple">
+                                    <p class="text-white fs-4">
+                                        Ideal para quem quer um corpo ágil, funcional e preparado pra qualquer missão. A
+                                        Classe ROGUE trabalha com exercícios dinâmicos e movimentos coordenados,
+                                        melhorando
+                                        reflexos, equilíbrio e condicionamento. Ideal para fugir do sedentarismo com
+                                        estilo!
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <p class="p-2 bg-green rounded mt-1 font-monospace text-center">
+                            <small><strong>Atividades principais:</strong> Calistenia, Treinamento com corda naval,
+                                Corrida
+                                Intervalada | O dia todo</small>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-dark-purple">
+                <div class="container-fluid text-white">
+                    <div class="row min-vh-50 align-items-stretch justify-content-center">
+
+                        <!-- Imagem ao lado -->
+                        <div class="col-lg-4 d-flex p-3">
+                            <div class="position-relative overflow-hidden ratio ratio-1x1 w-100 border rounded mx-auto">
+                                <img src="../assets/images/treinos-3.png"
+                                    class="position-absolute top-0 start-0 object-fit-cover rounded p-3" alt="Campanha">
+                            </div>
+                        </div>
+
+                        <!-- Conteúdo -->
+                        <div class="col-lg-8 d-flex flex-column justify-content-center p-2 text-center text-lg-start"
+                            id="treinos-mago">
+                            <h2>CLASSE MAGO</h2>
+                            <p class="font-monospace">
+                                <strong>Especialidade:</strong> Flexibilidade, controle corporal, respiração.
+                            </p>
+                            <p class="font-monospace">
+                                <strong>Bônus de Classe:</strong> +40 Foco | +35 Flexibilidade | +30 Controle interno
+                            </p>
+
+                            <div class="font-monospace">
+                                <div class=" bg-dark-purple">
+                                    <p class="text-white fs-4">
+                                        Yoga, alongamentos e respiração consciente são as magias da Classe MAGO. Aqui,
+                                        você
+                                        fortalece o core, ganha consciência corporal e amplia seu campo de mana (energia
+                                        vital). Um treino mais leve? Talvez. Mas subestimar um mago nunca foi uma boa
+                                        ideia.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <p class="p-2 bg-green rounded mt-1 font-monospace text-center">
+                            <small><strong>Atividades principais:</strong> Yoga em Grupo, Tai Chi, Treino com Faixas
+                                Elásticas, Hidroginástica | O dia todo</small>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-dark-purple">
+                <div class="container-fluid text-white">
+                    <div class="row min-vh-50 align-items-stretch justify-content-center">
+
+                        <!-- Imagem ao lado -->
+                        <div class="col-lg-4 d-flex p-3">
+                            <div class="position-relative overflow-hidden ratio ratio-1x1 w-100 border rounded mx-auto">
+                                <img src="../assets/images/treinos-4.png"
+                                    class="position-absolute top-0 start-0 object-fit-cover rounded p-3" alt="Campanha">
+                            </div>
+                        </div>
+
+                        <!-- Conteúdo -->
+                        <div class="col-lg-8 d-flex flex-column justify-content-center p-2 text-center text-lg-start"
+                            id="treinos-sobrevivente">
+                            <h2>CLASSE SOBREVIVENTE</h2>
+                            <p class="font-monospace">
+                                <strong>Especialidade:</strong> Cardio, resistência extrema, HIIT
+                            </p>
+                            <p class="font-monospace">
+                                <strong>Bônus de Classe:</strong> +60 Stamina | +40 Cardio | +10 Insanidade (do bem)
+                            </p>
+
+                            <div class="font-monospace">
+                                <div class=" bg-dark-purple">
+                                    <p class="text-white fs-4">
+                                        Prepare-se para sessões intensas de HIIT, onde cada repetição é uma luta pela
+                                        sua
+                                        vida (e pela sua evolução!). Se você quer emagrecer, ganhar fôlego e treinar em
+                                        alta
+                                        intensidade, este modo é o chefão final do seu condicionamento.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <p class="p-2 bg-green rounded mt-1 font-monospace text-center">
+                            <small><strong>Atividades principais:</strong> Bootcamp ao ar livre, Corrida + Funcional,
+                                Cardio
+                                Kickboxing | O dia todo</small>
+                        </p>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </nav>
+    </main>
 
-    <!-- Sessão 1 - Início -->
-    <section class="position-relative text-white text-center bg-dark-purple">
-        <div class="position-relative d-flex flex-column justify-content-center align-items-center pb-4">
-            <h1 class="display-1 fw-bold">Escolha a sua classe</h1>
-
-            <div class="bg-indigo w-100 pt-2">
-                <p class="lead font-monospace">
-                    Aqui na Game Up, cada treino é uma classe. Qual será sua build?
-                </p>
+    <!-- ASIDE: minigame, sessão kids, chamada para ação-->
+    <aside>
+        <div class="bg-dark-purple d-flex justify-content-center align-items-center pb-3">
+            <div class="col-10 border border-success rounded p-4 m-3" id="quiz-container">
+                <!-- quiz carregado via js -->
             </div>
-
         </div>
-    </section>
 
-    <!-- Sessão 2 - Treinos -->
-    <div class="bg-dark-purple p-3">
-        <!-- Card 1 -->
-        <div class="container-fluid text-white">
-            <div class="row min-vh-50 align-items-stretch justify-content-center">
+        <!-- Sessão 3 - Kids -->
+        <div class="container-fluid">
+            <div class="row min-vh-50 align-items-stretch justify-content-center p-3 bg-warning">
+                <!-- Conteúdo -->
+                <div class="col-12 text-center p-3">
+                    <h1 class="text-indigo">Classe Especial: Mini-Herói</h1>
+                </div>
+                <div class="col-lg-6 d-flex flex-column justify-content-center p-3 text-center text-lg-start">
+                    <div class="font-monospace">
+                        <p class="fs-4 text-navy">
+                            Aqui os pequenos players também têm sua própria jornada! Com missões divertidas e adaptadas
+                            à
+                            idade, os mini-heróis desbloqueiam habilidades como equilíbrio, coordenação e trabalho em
+                            equipe. Tudo isso com segurança, acompanhamento e muita diversão!
+                        </p>
+                    </div>
+                </div>
 
                 <!-- Imagem ao lado -->
-                <div class="col-lg-4 d-flex p-3">
-                    <div class="position-relative overflow-hidden ratio ratio-1x1 w-100 border rounded mx-auto">
-                        <img src="../assets/images/treinos-1.png"
-                            class="position-absolute top-0 start-0 object-fit-cover rounded p-3" alt="Campanha">
+                <div class="col-lg-6 d-flex p-3">
+                    <div class="position-relative overflow-hidden ratio ratio-21x9 w-100 rounded mx-auto p-3">
+                        <img src="../assets/images/treinos-kids.png"
+                            class="position-absolute top-0 start-0 object-fit-cover rounded" alt="Campanha">
                     </div>
                 </div>
 
-                <!-- Conteúdo -->
-                <div class="col-lg-8 d-flex flex-column justify-content-center p-2 text-center text-lg-start"
-                    id="treinos-tank">
-                    <h2>CLASSE TANK</h2>
-                    <p class="font-monospace">
-                        <strong>Especialidade:</strong> Força, hipertrofia, músculos definidos
-                    </p>
-                    <p class="font-monospace">
-                        <strong>Bônus de Classe:</strong> +50 Força | +30 Defesa | +20 de estilo na hora do pump
-                    </p>
-
-                    <div class="font-monospace">
-                        <div class=" bg-dark-purple">
-                            <p class="text-white fs-4">
-                                Se você quer se tornar o escudo da party, essa é a sua classe. Com treinos voltados para
-                                musculação e carga progressiva, a CLASSE TANK aumenta sua força bruta e resistência
-                                muscular. É o build ideal para quem busca hipertrofia e explosão física.
-                            </p>
+                <!--CARDS-->
+                <!--card 1-->
+                <div class="col-lg-4 col-md-12 d-flex p-3">
+                    <div class="card w-100">
+                        <div class="card-body bg-blue text-white rounded">
+                            <h5 class="card-title">Atividades</h5>
+                            <ul class="list-unstyled font-monospace">
+                                <li>Mini Circuito de Obstáculos</li>
+                                <li>Jogos de Equilíbrio</li>
+                                <li>Dança e Ritmo</li>
+                                <li>Yoga Kids</li>
+                                <li>Corridas Lúdicas</li>
+                                <li>Atividades com Bola</li>
+                                <li>Natação</li>
+                            </ul>
                         </div>
                     </div>
-
-
                 </div>
-                <p class="p-2 bg-green rounded mt-1 font-monospace text-center">
-                    <small><strong>Atividades principais:</strong> Powerlifting, Treinamento de Strongman, Musculação
-                        Clássica | O dia todo</small>
-                </p>
+
+                <!--card 2-->
+                <div class="col-lg-4 col-md-12 d-flex p-3">
+                    <div class="card w-100">
+                        <div class="card-body bg-indigo text-white rounded">
+                            <h5 class="card-title">Benefícios desbloqueados:</h5>
+                            <ul class="list-unstyled font-monospace">
+                                <li>Coordenação Motora</li>
+                                <li>Saúde Cardiovascular</li>
+                                <li>Flexibilidade e Mobilidade</li>
+                                <li>Socialização e Trabalho em Equipe</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--card 3-->
+                <div class="col-lg-4 col-md-12 d-flex p-3">
+                    <div class="card w-100">
+                        <div class="card-body bg-purple text-white rounded">
+                            <h5 class="card-title">E mais!</h5>
+                            <ul class="list-unstyled font-monospace">
+                                <li>De 4 a 12 anos</li>
+                                <li>Turmas divididas por faixa etária</li>
+                                <li>Equipamentos e espaço adaptado</li>
+                                <li>Horários personalizados</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 p-3">
+                    <p class="p-2 rounded mt-1 font-monospace text-center">
+                        <small class="text-navy">Para saber mais sobre a classe mini-heróis entre em contato com a
+                            Guilda
+                            (77) 777-777-777
+                            ou encontre a Game Up mais próxima da sua casa!</small>
+                    </p>
+                </div>
 
             </div>
         </div>
 
-        <!-- Card 2 -->
-        <div class="bg-dark-purple">
-            <div class="container-fluid text-white">
-                <div class="row min-vh-50 align-items-stretch justify-content-center">
-
-                    <!-- Imagem ao lado -->
-                    <div class="col-lg-4 d-flex p-3">
-                        <div class="position-relative overflow-hidden ratio ratio-1x1 w-100 border rounded mx-auto">
-                            <img src="../assets/images/treinos-2.png"
-                                class="position-absolute top-0 start-0 object-fit-cover rounded p-3" alt="Campanha">
-                        </div>
-                    </div>
-
-                    <!-- Conteúdo -->
-                    <div class="col-lg-8 d-flex flex-column justify-content-center p-2 text-center text-lg-start"
-                        id="treinos-rogue">
-                        <h2>CLASSE ROGUE</h2>
-                        <p class="font-monospace">
-                            <strong>Especialidade:</strong> Agilidade, funcional
-                        </p>
-                        <p class="font-monospace">
-                            <strong>Bônus de Classe:</strong> +40 Agilidade | +25 Reflexos | +15 Esquiva de preguiça
-                        </p>
-
-                        <div class="font-monospace">
-                            <div class=" bg-dark-purple">
-                                <p class="text-white fs-4">
-                                    Ideal para quem quer um corpo ágil, funcional e preparado pra qualquer missão. A
-                                    Classe ROGUE trabalha com exercícios dinâmicos e movimentos coordenados, melhorando
-                                    reflexos, equilíbrio e condicionamento. Ideal para fugir do sedentarismo com estilo!
-                                </p>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <p class="p-2 bg-green rounded mt-1 font-monospace text-center">
-                        <small><strong>Atividades principais:</strong> Calistenia, Treinamento com corda naval, Corrida
-                            Intervalada | O dia todo</small>
-                    </p>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="bg-dark-purple">
-            <div class="container-fluid text-white">
-                <div class="row min-vh-50 align-items-stretch justify-content-center">
-
-                    <!-- Imagem ao lado -->
-                    <div class="col-lg-4 d-flex p-3">
-                        <div class="position-relative overflow-hidden ratio ratio-1x1 w-100 border rounded mx-auto">
-                            <img src="../assets/images/treinos-3.png"
-                                class="position-absolute top-0 start-0 object-fit-cover rounded p-3" alt="Campanha">
-                        </div>
-                    </div>
-
-                    <!-- Conteúdo -->
-                    <div class="col-lg-8 d-flex flex-column justify-content-center p-2 text-center text-lg-start"
-                        id="treinos-mago">
-                        <h2>CLASSE MAGO</h2>
-                        <p class="font-monospace">
-                            <strong>Especialidade:</strong> Flexibilidade, controle corporal, respiração.
-                        </p>
-                        <p class="font-monospace">
-                            <strong>Bônus de Classe:</strong> +40 Foco | +35 Flexibilidade | +30 Controle interno
-                        </p>
-
-                        <div class="font-monospace">
-                            <div class=" bg-dark-purple">
-                                <p class="text-white fs-4">
-                                    Yoga, alongamentos e respiração consciente são as magias da Classe MAGO. Aqui, você
-                                    fortalece o core, ganha consciência corporal e amplia seu campo de mana (energia
-                                    vital). Um treino mais leve? Talvez. Mas subestimar um mago nunca foi uma boa ideia.
-                                </p>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <p class="p-2 bg-green rounded mt-1 font-monospace text-center">
-                        <small><strong>Atividades principais:</strong> Yoga em Grupo, Tai Chi, Treino com Faixas
-                            Elásticas, Hidroginástica | O dia todo</small>
-                    </p>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="bg-dark-purple">
-            <div class="container-fluid text-white">
-                <div class="row min-vh-50 align-items-stretch justify-content-center">
-
-                    <!-- Imagem ao lado -->
-                    <div class="col-lg-4 d-flex p-3">
-                        <div class="position-relative overflow-hidden ratio ratio-1x1 w-100 border rounded mx-auto">
-                            <img src="../assets/images/treinos-4.png"
-                                class="position-absolute top-0 start-0 object-fit-cover rounded p-3" alt="Campanha">
-                        </div>
-                    </div>
-
-                    <!-- Conteúdo -->
-                    <div class="col-lg-8 d-flex flex-column justify-content-center p-2 text-center text-lg-start"
-                        id="treinos-sobrevivente">
-                        <h2>CLASSE SOBREVIVENTE</h2>
-                        <p class="font-monospace">
-                            <strong>Especialidade:</strong> Cardio, resistência extrema, HIIT
-                        </p>
-                        <p class="font-monospace">
-                            <strong>Bônus de Classe:</strong> +60 Stamina | +40 Cardio | +10 Insanidade (do bem)
-                        </p>
-
-                        <div class="font-monospace">
-                            <div class=" bg-dark-purple">
-                                <p class="text-white fs-4">
-                                    Prepare-se para sessões intensas de HIIT, onde cada repetição é uma luta pela sua
-                                    vida (e pela sua evolução!). Se você quer emagrecer, ganhar fôlego e treinar em alta
-                                    intensidade, este modo é o chefão final do seu condicionamento.
-                                </p>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <p class="p-2 bg-green rounded mt-1 font-monospace text-center">
-                        <small><strong>Atividades principais:</strong> Bootcamp ao ar livre, Corrida + Funcional, Cardio
-                            Kickboxing | O dia todo</small>
-                    </p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--MINIGAME-->
-    <aside class="bg-dark-purple d-flex justify-content-center align-items-center pb-3">
-        <div class="col-10 col-md-6 border border-success rounded p-4 m-3" id="quiz-container">
-            <!-- quiz carregado via js -->
-        </div>
+        <!-- Chamada para ação -->
+        <section class="text-center bg-light py-5 bg-dark text-white">
+            <h2 class="fw-bold text-uppercase">SEGUE ESSA DICA</h2>
+            <p class="font-monospace">Você também pode criar uma Classe personalizada. <br>
+                Combine builds, evolua sua ficha e descubra novas habilidades com a Game Up!</p>
+            <a href="../html/signup.html" class="btn btn-info text-white px-4 py-2">NOVO JOGO</a>
+        </section>
     </aside>
-    <!--MINIGAME-->
-
-    <!-- Sessão 3 - Kids -->
-    <div class="container-fluid">
-        <div class="row min-vh-50 align-items-stretch justify-content-center p-3 bg-warning">
-            <!-- Conteúdo -->
-            <div class="col-12 text-center p-3">
-                <h1 class="text-indigo">Classe Especial: Mini-Herói</h1>
-            </div>
-            <div class="col-lg-6 d-flex flex-column justify-content-center p-3 text-center text-lg-start">
-                <div class="font-monospace">
-                    <p class="fs-4 text-navy">
-                        Aqui os pequenos players também têm sua própria jornada! Com missões divertidas e adaptadas à
-                        idade, os mini-heróis desbloqueiam habilidades como equilíbrio, coordenação e trabalho em
-                        equipe. Tudo isso com segurança, acompanhamento e muita diversão!
-                    </p>
-                </div>
-            </div>
-
-            <!-- Imagem ao lado -->
-            <div class="col-lg-6 d-flex p-3">
-                <div class="position-relative overflow-hidden ratio ratio-21x9 w-100 rounded mx-auto p-3">
-                    <img src="../assets/images/treinos-kids.png"
-                        class="position-absolute top-0 start-0 object-fit-cover rounded" alt="Campanha">
-                </div>
-            </div>
-
-            <!--CARDS-->
-            <!--card 1-->
-            <div class="col-lg-4 col-md-12 d-flex p-3">
-                <div class="card w-100">
-                    <div class="card-body bg-blue text-white rounded">
-                        <h5 class="card-title">Atividades</h5>
-                        <ul class="list-unstyled font-monospace">
-                            <li>Mini Circuito de Obstáculos</li>
-                            <li>Jogos de Equilíbrio</li>
-                            <li>Dança e Ritmo</li>
-                            <li>Yoga Kids</li>
-                            <li>Corridas Lúdicas</li>
-                            <li>Atividades com Bola</li>
-                            <li>Natação</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!--card 2-->
-            <div class="col-lg-4 col-md-12 d-flex p-3">
-                <div class="card w-100">
-                    <div class="card-body bg-indigo text-white rounded">
-                        <h5 class="card-title">Benefícios desbloqueados:</h5>
-                        <ul class="list-unstyled font-monospace">
-                            <li>Coordenação Motora</li>
-                            <li>Saúde Cardiovascular</li>
-                            <li>Flexibilidade e Mobilidade</li>
-                            <li>Socialização e Trabalho em Equipe</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!--card 3-->
-            <div class="col-lg-4 col-md-12 d-flex p-3">
-                <div class="card w-100">
-                    <div class="card-body bg-purple text-white rounded">
-                        <h5 class="card-title">E mais!</h5>
-                        <ul class="list-unstyled font-monospace">
-                            <li>De 4 a 12 anos</li>
-                            <li>Turmas divididas por faixa etária</li>
-                            <li>Equipamentos e espaço adaptado</li>
-                            <li>Horários personalizados</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 p-3">
-                <p class="p-2 rounded mt-1 font-monospace text-center">
-                    <small class="text-navy">Para saber mais sobre a classe mini-heróis entre em contato com a Guilda
-                        (77) 777-777-777
-                        ou encontre a Game Up mais próxima da sua casa!</small>
-                </p>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- Chamada para ação -->
-    <section class="text-center bg-light py-5 bg-dark text-white">
-        <h2 class="fw-bold text-uppercase">SEGUE ESSA DICA</h2>
-        <p class="font-monospace">Você também pode criar uma Classe personalizada. <br>
-            Combine builds, evolua sua ficha e descubra novas habilidades com a Game Up!</p>
-        <button class="btn btn-info text-white px-4 py-2">NOVO JOGO</button>
-    </section>
-
 
     <!-- FOOTER -->
     <footer class="text-center py-4 bg-indigo">

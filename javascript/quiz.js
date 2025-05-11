@@ -155,30 +155,33 @@ document.addEventListener("DOMContentLoaded", function () {
       tank: {
         title: "TANK",
         subtitle: "a Muralha imparável",
-        emoji:"🛡️",
+        emoji: "🛡️",
         body: "Você é o tipo de jogador que encara tudo de frente. Treino leve? Isso nem te aquece. Você precisa sentir o chão tremer e o peso desafiar seus limites. Na Game-Up, sua arena é o espaço de força bruta: barras, anilhas e gritos internos. Sua jornada é sobre superação, disciplina e músculo. Quando o mundo recua… você avança.",
-        build: "Área de Exercícios Pesados + Desafio de Carga Extrema + Respira e repete"
+        build:
+          "Área de Exercícios Pesados + Desafio de Carga Extrema + Respira e repete",
       },
       rogue: {
         title: "ROGUE",
         subtitle: "a lâmina silenciosa",
         emoji: "🗡️ ",
         body: "Agilidade, precisão e astúcia. Você não treina — você executa missões. Treinos rápidos, circuitos intensos e aquela adrenalina de saber que cada segundo conta. Você se move sem esforço, sempre dois passos à frente. O suor é invisível, mas o impacto? Mortal.",
-        build: "Circuito Ninja + Funcional Stealth + 30 segundos de fuga e glória"
+        build:
+          "Circuito Ninja + Funcional Stealth + 30 segundos de fuga e glória",
       },
       mago: {
         title: "MAGO",
         subtitle: "o sábio do equilíbrio",
         emoji: "🧙‍♂️",
         body: "Seu treino vai além do físico. Cada movimento tem propósito, cada pausa é cálculo. Você domina corpo e mente como quem conjura feitiços — seja no yoga, no alongamento ou nas práticas de controle corporal. O mundo corre, você contempla. E, ainda assim, evolui mais rápido que todos.",
-        build: "Yoga Arcana + Respiração Tática + Meditação de Buff diário"
+        build: "Yoga Arcana + Respiração Tática + Meditação de Buff diário",
       },
       sobrevivente: {
         title: "SOBREVIVENTE",
         subtitle: "a lenda incansável",
         emoji: "🏃‍♀️",
         body: "Você é energia pura, sem botão de pausa. O treino ideal pra você é aquele que parece missão de resistência — e você sempre vai até o fim. Correr, pular, escalar… o que for. Seu fôlego é lendário, sua determinação, contagiante. Enquanto outros descansam, você está na próxima volta.",
-        build: "Corrida Infinita + Desafio Cardio + Água e respira, que lá vem mais"
+        build:
+          "Corrida Infinita + Desafio Cardio + Água e respira, que lá vem mais",
       },
     };
 
@@ -191,7 +194,9 @@ document.addEventListener("DOMContentLoaded", function () {
         <p class="mt-3">${res.body}</p>
         <small class="text-blue">Build recomendada: ${res.build}</small>
         <p class="mt-3">Use o cupom <span class="text-green">${res.title}20%OFF</span> para começar a sua jornada!</p>
-        <button class="btn btn-primary mt-4" onclick="location.reload()">Responder novamente</button>
+        <div class="text-center">
+          <button class="btn btn-primary mt-4" onclick="location.reload()">Responder novamente</button>
+        </div>      
       </div>
     `;
   }
