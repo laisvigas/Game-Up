@@ -1,4 +1,4 @@
-![Homepage Preview](../Game-Up/assets/images/gameup.png)
+![Homepage Preview](./assets/images/gameup.png)
 
 **Game Up** is a gamified workout platform designed to make physical activity more fun and engaging, especially for the geek audience. Inspired by RPG mechanics, the platform features a **class system**, **skills**, and **leveling up**, turning workouts into an adventurous journey full of challenges and progression. Users can choose a class, complete physical activities and level up as they overcome challenges and unlock new abilities — making fitness a more interactive and motivating experience.
 
